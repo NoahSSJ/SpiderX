@@ -6,17 +6,21 @@ import pickle
 from pprint import pformat, pprint
 import random
 import time
+import os
 from urllib.parse import urlencode
 import requests
-from xhs.core.encrypt import XS
+from .encrypt import XS
 from lxml import etree
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import re
 import redis
 import sqlite3
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def setup_logger(task_name: str = "xhs") -> logging.Logger:
-    root_dir = next((dir for dir in Path(__file__).resolve().parents if dir.joinpath('pyproject.toml').exists()), None)
+    root_dir = next((dir for dir in Path(__file__).resolve().parents if dir.joinpath('a.txt').exists()), None)
     log_dir = root_dir / "logs" / task_name
     log_dir.mkdir(parents=True, exist_ok=True)
     log_path = log_dir.joinpath('run.log')
@@ -70,10 +74,10 @@ class XhsSpider():
     }
 
     r = redis.Redis(
-        host="127.0.0.1",
+        host=os.getenv('hostname'),
         port=6379,
         db=0,
-        password='1234',
+        password=os.getenv('passwd'),
         decode_responses=True,
         protocol=2,
     )
@@ -216,4 +220,5 @@ if __name__ == '__main__':
     a = XhsSpider()
     # a.get_page()
     # a.get_user()
-    a.get_data()
+    # print(next(a.generate_urls()))
+    a.process_urls()

@@ -56,7 +56,7 @@ log = setup_logger(task_name='1')
 log.info('123')
 
 class WeiboSpider():
-    session =  requests.Session()
+    session = requests.Session()
     session.headers = {
         'accept': 'application/json, text/plain, */*',
         'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
