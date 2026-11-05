@@ -24,9 +24,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+SRC_DIR = next((dir / "src" for dir in Path(__file__).resolve().parents if dir.joinpath('requirements.txt').exists()), None)
+
 def setup_logger(task_name: str = "bilibili"):
-    root_dir = next((dir for dir in Path(__file__).resolve().parents if dir.joinpath("pyproject.toml").exists()), None)
-    log_dir = root_dir / "log" / task_name
+    log_dir = SRC_DIR / "log" / task_name
     log_dir.mkdir(parents=True, exist_ok=True)
     log_path = log_dir.joinpath('run.log')
     logger = logging.getLogger(task_name)
@@ -82,8 +83,7 @@ class BiliBiliSpider():
 
     }
 
-    root_dir = next((dir for dir in Path(__file__).resolve().parents if dir.joinpath('pyproject.toml').exists()), None)
-    save_dir = root_dir / "download"
+    save_dir = SRC_DIR / "download"
     save_dir.mkdir(parents=True, exist_ok=True)
 
     def __init__(self, url: str):
@@ -271,8 +271,8 @@ class BiliBiliSpider():
                 
 def run_pipline():
     s = BiliBiliSpider('1')
-    # s.process_urls()
-    # exit()
+    s.process_urls()
+    exit()
     with ThreadPoolExecutor(max_workers=1) as pool:
         futures = [pool.submit(s.worker) for _ in range(1)]
         for future in as_completed(futures):
@@ -294,6 +294,7 @@ def run_pipline():
                 
 if __name__ == "__main__":
     # run_pipline()
-    while True:
-        time.sleep(3)
-        print('123')
+    # while True:
+    #     time.sleep(3)
+    #     print('123')
+    log.info(1)

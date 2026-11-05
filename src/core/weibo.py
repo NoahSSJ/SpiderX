@@ -9,8 +9,13 @@ from pathlib import Path
 from logging.handlers import RotatingFileHandler
 from pprint import pprint
 from dotenv import load_dotenv
+from enum import Enum
 
-ROOT_DIR = next((dir for dir in Path(__file__).resolve().parents if dir.joinpath('requirements.txt').exists()), None)
+class Mode(Enum):
+    MEDIA = 0
+    COMMENT = 1
+
+SRC_DIR = next((dir / "src" for dir in Path(__file__).resolve().parents if dir.joinpath('requirements.txt').exists()), None)
 
 load_dotenv()
 
@@ -19,7 +24,7 @@ def setup_logger(task_name: str, level: int = 1) -> logging.Logger:
         case 0: level = logging.DEBUG
         case 1: level = logging.INFO
     
-    log_dir = ROOT_DIR / "log" / task_name
+    log_dir = SRC_DIR / "log" / task_name
     log_dir.mkdir(parents=True, exist_ok=True)
     log_path = log_dir.joinpath('run.log')
     logger = logging.getLogger(task_name)
@@ -76,12 +81,14 @@ class WeiboSpider():
         'x-xsrf-token': 'NdFsQ3wDVxhzdX1f8KFFu_Y1',
         'cookie': 'SCF=Ao13OC6Rt85UWOdDzVWUUKHePFVhXCq8C3W7ZypxTTvaOWB7XmAM_Ata6mZCDQV-bntF_ZJarC2eN1u2mXYghmQ.; SUB=_2A25H7dYpDeRhGeFJ4lUR9CvMyTyIHXVkg1fhrDV8PUNbmtANLRSlkW9Nfr-Ikm0-Rg2_hQ-Of0fJQ6L-zqoZFlWk; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9Wh1DLBSZYmiLfaEW7-PxKxc5NHD95QNS0.NehBfehz7Ws4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNS0M4S05XSK5Ee5tt; ALF=02_1796289401; XSRF-TOKEN=NdFsQ3wDVxhzdX1f8KFFu_Y1; WBPSESS=BWHVdTaHUrxrFPjSI85rtSHhHy60IqJ5jMnU_veNA6aGYytnnoXoSf6Fxw8UiQsAgJXJ_3KHyBqj_z7o7x6t51P9ns4clbCdfgvgE1ycJXWfv0OV-Q_ulmMdbKobTXWZbHptuMiFbpltmHxiyyrZ4A==; _s_tentry=weibo.com; Apache=9051794939521.111.1793703858928; SINAGLOBAL=9051794939521.111.1793703858928; ULV=1793703858930:1:1:1:9051794939521.111.1793703858928:',
     }
-    session.proxies = {}
+    session.proxies = {
+        
+    }
 
     def __init__(self, url='https://weibo.com/6015179439'):
         self.homepage_url = url
         self.uid = self.homepage_url.split('/')[-1] 
-        self.save_dir = ROOT_DIR / "images"
+        self.save_dir = SRC_DIR / "download"
         self.save_dir.mkdir(parents=True, exist_ok=True)
         self.r = self.build_redis()
 
@@ -116,20 +123,24 @@ class WeiboSpider():
                 pic_ids = item.get('pic_ids')
                 pic_infos = item.get('pic_infos')
                 text_raw = item.get('text_raw')
+                image_list = []
+                video_list = []
                 if pic_ids and pic_infos:
                     for id in pic_ids:
                         image_url = pic_infos[id]['large']['url']
+                        image_list.append(image_url)
                         video_url = pic_infos[id].get('video')
+                        video_list.append(video_url)
                         kwargs = {
                             "uid": uid,
                             "name": name,
                             "created_at": created_at,
                             "item_id": item_id,
                             "text": text_raw,
-                            "image_url": image_url,
-                            "video_url": video_url
+                            "image_list": image_list,
+                            "video_list": video_list
                         }
-                        yield kwargs
+                    yield kwargs
 
             return
 
@@ -141,10 +152,43 @@ class WeiboSpider():
                 json_str = json.dumps(kwargs, ensure_ascii=False, indent=2)
                 self.r.lpush("wb_list", json_str)
 
-    def parse_url(self, kwargs):
-        pprint(kwargs)
+    def parse_url(self, kwargs, mode: int = 1):
+        # pprint(kwargs)
+        item_id = kwargs.get('item_id')
+        uid = kwargs.get('uid')
+
+        item_id = '5361502942660310'
+        uid = '7335979459'
+
+        match mode:
+            case Mode.MEDIA.value:
+                pass
+            case Mode.COMMENT.value:
+                print(1)
+                params = {
+                    'is_reload': '1',
+                    'id': item_id,
+                    'is_show_bulletin': '2',
+                    'is_mix': '0',
+                    'count': '10',
+                    'uid': uid,
+                    'fetch_level': '0',
+                    'locale': 'zh-CN',
+                }
+                while True:
+                    response = self.session.get('https://weibo.com/ajax/statuses/buildComments', params=params)
+                    # pprint(response.json())
+                    max_id = response.json().get('max_id')
+                    params['max_id'] = max_id
+                    text = ''
+                    for item in response.json()['data']:
+                        text += item['text_raw'] + '\n'
+                    print(text)
+                    if max_id == 0:
+                        return
 
     def consumer(self):
+        cnt = 0
         while True:
             json_tuple = self.r.brpop("wb_list", timeout=5)
             print(json_tuple)
@@ -152,10 +196,14 @@ class WeiboSpider():
                 break
             kwargs = json.loads(json_tuple[1])
             self.parse_url(kwargs)
+            cnt += 1
+            if cnt == 1:
+                return
 
 
 if __name__ == "__main__":
     a = WeiboSpider()
     # pprint(next(a.generate_urls()))
     # a.process_urls()
-    a.consumer()
+    # a.consumer()
+    a.parse_url(kwargs={'a':1})
