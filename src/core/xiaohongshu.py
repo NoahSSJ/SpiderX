@@ -1,3 +1,7 @@
+from pprint import pformat, pprint
+import re
+from urllib.parse import urlencode
+
 import requests
 import json
 import logging
@@ -11,9 +15,13 @@ import json
 import random
 import struct
 import time
+from lxml import etree
 from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent.parent.resolve()))
+print(sys.path)
+from src.client import *
 
-ROOT_DIR = next((dir for dir in Path(__file__).resolve().parents if dir.joinpath('requirements.txt').exists()), None)
+SRC_DIR = next((dir / "src" for dir in Path(__file__).resolve().parents if dir.joinpath('requirements.txt').exists()), None)
 
 STANDARD = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 MNS = 'MfgqrsbcyzPQRStuvC7mn501HIJBo2DEFTKdeNOwxWXYZap89+/A4UVLhijkl63G'
@@ -119,7 +127,7 @@ def generate_xs(path, cookie, body='', body_type='', counter=25):
     return {'x-s': xs, 'x-t': str(timestamp)}, counter
 
 def setup_logger(task_name: str) -> logging.Logger:
-    log_dir = ROOT_DIR / "log" / task_name
+    log_dir = SRC_DIR / "log" / task_name
     log_dir.mkdir(parents=True, exist_ok=True)
     log_path = log_dir.joinpath('run.log')
     logger = logging.getLogger(task_name)
@@ -179,14 +187,142 @@ class XhsSpider():
 
     def __init__(self, url: str):
         self.homepage = url
-        self.r = self.build_redis()
-        # self.conn = self.build_mysql()
+        self.r = build_redis()
+        self.uid = url.split('?')[0].split('/')[-1]
+        self.xsec_token = url.split('xsec_token=')[-1].split('&')[0]
+        self.note_cnt = 0
+        self.name = self.get_name()
+        # self.conn = build_db()
 
-    @staticmethod
-    def build_redis():
-        print(1)
 
-if __name__ == "__main__":
-    a = XhsSpider(url='11111')
-    print(a.r)
+    def get_name(self):
+        response = self.session.get(url=self.homepage)
+        response.encoding = response.apparent_encoding
+        html = etree.HTML(response.text)
+        name = html.xpath("//title/text()")[0]
+        return name
+
+    def generate_urls(self):
+        response = self.session.get(url=self.homepage)
+        pattern = r"window\.__INITIAL_STATE__\s*=\s*(\{.*?\})\s*;?\s*</script>"
+        match = re.search(pattern, response.text, re.S)
+        json_str = match.group(1)
+        json_str = json_str.replace(':undefined', ':null').replace('new Set([])', '[]')
+        json_dict = json.loads(json_str)
+        for index, item in enumerate(json_dict['user']['notes'][0], start=1):
+            note_id = item['noteCard']['noteId']
+            xsec_token = item['noteCard']['xsecToken']
+            # title = item['display_title']
+            url = f'https://www.xiaohongshu.com/explore/{note_id}?xsec_token={xsec_token}&xsec_source=pc_like'
+            yield url
+            self.note_cnt += 1
+        cursor = url.split('/')[-1].split('?')[0]
+        params = {
+            "num": "30",
+            "cursor": cursor,
+            "user_id": "5ec90017000000000101f887",
+            "image_formats": "jpg,webp,avif",
+            "xsec_token": self.xsec_token,
+            "xsec_source": "pc_like",
+        }
+        while True:
+            url = 'https://edith.xiaohongshu.com/api/sns/web/v1/user_posted'
+            path = '/' + url.split('/', 3)[3] + '?' + urlencode(params)
+            # self.session.headers.update(self.signer.generate(path, self.session.headers['cookie']))
+            self.session.headers.update(generate_xs(path, self.session.headers['cookie']))
+            response = self.session.get(url, params=params)
+            pprint(response.json())
+            cursor = response.json()['data']['cursor']
+            has_more = response.json()['data']['has_more']
+            print('--------------------------------')
+            print(cursor)
+            print(has_more)
+            print('----------------------------------')
+            for index, item in enumerate(response.json()['data']['notes'], start=1):
+                note_id = item['note_id']
+                xsec_token = item['xsec_token']
+                # title = item['display_title']
+                url = f'https://www.xiaohongshu.com/explore/{note_id}?xsec_token={xsec_token}&xsec_source=pc_like'
+                yield url
+                self.note_cnt += 1
+            params['cursor'] = cursor
+            
+            time.sleep(random.uniform(3, 10))
+            if has_more == False:
+                log.info(self.note_cnt)
+                return
+
+    def process_urls(self):
+        for index, url in enumerate(self.generate_urls(), start=1):
+            if self.r.sadd("seen_urls", url):
+                log.info(f"{url}入队")
+                self.r.lpush('url_queue', url)
+            if index == 3:
+                return
+
+    def consume_urls(self):
+        while True:
+            url = self.r.rpop('url_queue')
+            if url is None:
+                break
+            log.info(f"正在消费{url}")
+            yield url
+
+    def parse_url(self, url):
+        response = self.session.get(url=url)
+        pattern = r"window\.__INITIAL_STATE__\s*=\s*(\{.*?\})\s*;?\s*</script>"
+        match = re.search(pattern, response.text, re.S)
+        json_str = match.group(1)
+        json_str = json_str.replace(':undefined', ':null').replace('new Map([])', '{}')
+        json_str = json_str.rstrip().removesuffix(',')
+        json_dict = json.loads(json_str)
+        data = json_dict['feed']['undertakeNote']
+        # pprint(data)
+        title = data['items'][0]['noteCard']['title']
+        desc = data['items'][0]['noteCard']['desc']
+        tags = ','.join([i['name'] for i in data['items'][0]['noteCard']['tagList']])
+        image_list = []
+        video_list = []
+        for index, item in enumerate(data['items'][0]['noteCard']['imageList'], start=1):
+            image_url = item['urlDefault']
+            image_bytes = requests.get(image_url, headers=self.session.headers).content
+            image_list.append(image_bytes)
+        # log.info(title)
+        # log.info(url)
+        # log.info(image_list)
+        kwargs = {
+            "uid": self.uid,
+            "name": self.name,
+            "title": title,
+            "image_list": image_list,
+            "video_list": video_list
+        }
+        log.info(pformat(kwargs))
+        yield kwargs
+        # conn = sqlite3.connect("xhs.db")
+        # conn.execute("""
+        #     CREATE TABLE IF NOT EXISTS wk (
+        #         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        #         title TEXT NOT NULL,
+        #         image_list BLOB,
+        #         video_list BLOB
+        #     )
+        # """)
+        # conn.execute("""INSERT INTO wk (title, image_list, video_list) VALUES (?, ?, ?)""", (title, pickle.dumps(image_list), pickle.dumps(video_list)))
+        # conn.commit()
+
+
+
+
+
+
+            
+
+if __name__ == '__main__':
+    a = XhsSpider(url='')
+    # a.get_page()
+    # a.get_user()
+    # print(next(a.generate_urls()))
+    a.process_urls()
+
 
