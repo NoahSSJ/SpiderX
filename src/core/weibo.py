@@ -56,7 +56,7 @@ log = setup_logger(task_name='1')
 log.info('123')
 
 class WeiboSpider():
-    session =  requests.Session()
+    session = requests.Session()
     session.headers = {
         'accept': 'application/json, text/plain, */*',
         'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
@@ -106,7 +106,7 @@ class WeiboSpider():
             }
             response = self.session.get('https://weibo.com/ajax/statuses/mymblog', params=params)
             # pprint(response.json())
-            since_id = response.json['since_id']
+            since_id = response.json()['data']['since_id']
             params['since_id'] = since_id
             for item in response.json()['data']['list']:
                 item_id = item['id']
@@ -131,6 +131,8 @@ class WeiboSpider():
                         }
                         yield kwargs
 
+            return
+
     def process_urls(self):
         for index, kwargs in enumerate(self.generate_urls(), start=1):
             item_id = kwargs['item_id']
@@ -140,17 +142,20 @@ class WeiboSpider():
                 self.r.lpush("wb_list", json_str)
 
     def parser_url(self, kwargs):
-        pass
+        pprint(kwargs)
 
     def consumer(self):
         while True:
             json_tuple = self.r.brpop("wb_list", timeout=5)
+            print(json_tuple)
             if json_tuple is None:
                 break
-            kwargs = json.loads(json_tuple(1))
+            kwargs = json.loads(json_tuple[1])
             self.parser_url(kwargs)
 
 
 if __name__ == "__main__":
     a = WeiboSpider()
-    pprint(next(a.generate_urls()))
+    # pprint(next(a.generate_urls()))
+    # a.process_urls()
+    a.consumer()
