@@ -141,7 +141,7 @@ class WeiboSpider():
                 json_str = json.dumps(kwargs, ensure_ascii=False, indent=2)
                 self.r.lpush("wb_list", json_str)
 
-    def parser_url(self, kwargs):
+    def parse_url(self, kwargs):
         pprint(kwargs)
 
     def consumer(self):
@@ -151,7 +151,7 @@ class WeiboSpider():
             if json_tuple is None:
                 break
             kwargs = json.loads(json_tuple[1])
-            self.parser_url(kwargs)
+            self.parse_url(kwargs)
 
 
 if __name__ == "__main__":
