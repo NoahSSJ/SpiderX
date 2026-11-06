@@ -124,7 +124,7 @@ class BiliBiliSpider():
 
     def generate_urls(self):
         params = {
-            "pn": 1,
+            "pn": 6,
             "ps": 40,
             "tid": 0,
             "special_type": "",
@@ -147,6 +147,8 @@ class BiliBiliSpider():
         while True:
             params = self.get_wid(params=params)
             response = self.session.get('https://api.bilibili.com/x/space/wbi/arc/search', params=params)
+            log.info(response.json()['code'])
+            # pprint(response.json())
             if end is None:
                 end = math.ceil(response.json()['data']['page']['count'] / 40)
             for index, item in enumerate(response.json()['data']['list']['vlist'], start=1):
@@ -166,6 +168,7 @@ class BiliBiliSpider():
                 yield kwargs
             params['pn'] += 1
             time.sleep(random.uniform(TIME_DELAY_MIN, TIME_DELAY_MAX))
+            return
             if params['pn'] > end:
                 return
                      
