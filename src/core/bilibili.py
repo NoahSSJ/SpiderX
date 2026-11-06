@@ -124,7 +124,7 @@ class BiliBiliSpider():
 
     def generate_urls(self):
         params = {
-            "pn": 6,
+            "pn": 1,
             "ps": 40,
             "tid": 0,
             "special_type": "",
