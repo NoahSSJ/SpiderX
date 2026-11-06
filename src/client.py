@@ -59,12 +59,12 @@ def build_redis():
     r.ping()
     return r
 
-def build_db(self):
+def build_db():
     conn = mysql.connector.connect(
         host="127.0.0.1",
         port=3306,
         user="root",
-        password=f"{os.getenv('passwd')}",
+        # password=f"{os.getenv('passwd')}",
         database="testdb",       
         charset="utf8mb4",    
     )
