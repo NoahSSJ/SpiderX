@@ -21,6 +21,8 @@ import os
 import socket
 import uuid
 from dotenv import load_dotenv
+sys.path.append(str(Path(__file__).parent.parent.parent.resolve()))
+from src.client import build_db, build_redis
 
 load_dotenv()
 
@@ -39,6 +41,7 @@ def setup_logger(task_name: str = "bilibili"):
         fmt=
         "%(asctime)s | "
         "%(hostname)s | "
+        "%(process)d | "
         "%(threadName)s | "
         "%(levelname)s | "
         "%(filename)s:%(lineno)d | "
@@ -88,41 +91,8 @@ class BiliBiliSpider():
 
     def __init__(self, url: str):
         self.url = url
-        self.conn = self.build_db()
-        self.r = self.build_redis()
-        
-    def build_db(self):
-        conn = mysql.connector.connect(
-            host=f"{os.getenv('host')}",
-            port=3306,
-            user="a0",
-            password=f"{os.getenv('passwd')}",
-            database="testdb",       
-            charset="utf8mb4",    
-        )
-        sql = """
-            CREATE TABLE IF NOT EXISTS purchase (
-                id INT PRIMARY KEY AUTO_INCREMENT,
-                text VARCHAR(255) NOT NULL
-            ) DEFAULT CHARSET=utf8mb4
-        """
-        cur = conn.cursor()
-        cur.execute(sql)
-        conn.commit()
-        cur.close()
-        return conn
-    
-    def build_redis(self):
-        conn = redis.Redis(
-            host=f"{os.getenv('host')}",
-            port=6379,
-            db=0,                     # 0~15，等于 MySQL 里不同的库
-            password=f"{os.getenv('passwd')}",            # 没设密码就写 None
-            decode_responses=True,    # 取出来是字符串，不然是 b"xxx"
-            socket_timeout=5,         # 5 秒超时，防止卡死
-        )
-        conn.ping()                   # 连不通这里马上报错，别等第一次取数据才发现
-        return conn
+        # self.conn = build_db()
+        self.r = build_redis()
         
     def get_wbi_key(self):
         response = self.session.get(url='https://api.bilibili.com/x/web-interface/nav')
@@ -213,10 +183,10 @@ class BiliBiliSpider():
     def process_urls(self):
         for index, kwargs in enumerate(self.generate_urls(), start=1):
             url = kwargs['url']
-            if self.r.sadd("seen_urls", url):
+            if self.r.sadd("bili_set", url):
                 log.info(f"第{index}个url入队，url:{url}")
                 json_str = json.dumps(kwargs, ensure_ascii=False, indent=2)
-                self.r.lpush("queue", json_str)
+                self.r.lpush("bili_list", json_str)
             
     def parse_comment_url(self, aid: str):
         loop_index = 0
@@ -258,7 +228,7 @@ class BiliBiliSpider():
     
     def worker(self):
         while True:
-            json_tuple = self.r.brpop("queue", timeout=5)
+            json_tuple = self.r.brpop("bili_list", timeout=5)
             if json_tuple is None:
                 break
             json_dict = json.loads(json_tuple[1])
@@ -286,15 +256,15 @@ def run_pipline():
     #     if flag == 1:
     #         instance.process_urls(params)
     #     else:
-    #         json_tuple = instance.r.brpop("queue", timeout=5)
+    #         json_tuple = instance.r.brpop("bili_list", timeout=5)
     #         json_dict = json.loads(json_tuple[1])
     #         pprint(json_dict)
 
   
                 
 if __name__ == "__main__":
-    # run_pipline()
+    run_pipline()
     # while True:
     #     time.sleep(3)
     #     print('123')
-    log.info(1)
+    # log.info(1)
