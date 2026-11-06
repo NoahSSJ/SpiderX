@@ -35,7 +35,7 @@ class BiliBiliSpider():
         'sec-fetch-mode': 'cors',
         'sec-fetch-site': 'same-site',
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0',
-        'cookie': "buvid3=7D635C11-7648-0B92-F51C-4F32593660A603269infoc; b_nut=1790153403; _uuid=EF58C87B-92DE-789C-52106-4C95F2F13A10C03506infoc; buvid_fp=561dfa36addd3c6e81e3fab7a3dc8ddc; home_feed_column=4; browser_resolution=1272-668; buvid4=A6B5704E-AD92-70CD-4C4F-D8530B32E7F504950-026092316-4p8iWDXLmUBr1VXCP/kzng%3D%3D; CURRENT_QUALITY=0; rpdid=|(umYu~kJYYk0J'u~m|ulJl~k; bsource=search_bing; bili_ticket=eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3OTIyOTE3OTgsImlhdCI6MTc5MjAzMjUzOCwicGx0IjotMX0.df8NNNQkV3d8q6PTQTWO8WKuUkyrHw9ygXiIEEQmI8U; bili_ticket_expires=1792291738; SESSDATA=81728145%2C1807584664%2C82464%2Aa1CjCSgBS2vUqHLKqawhGX9pd5N9MKJABe1mW-c3urUWJO7wjCke2_1mjRwkGZMV3QosASVkpHR1hOZUhtU1M1U0xWdy1aMVV6eVRxZ0ZrQ2MxWVhWcWlKVUk3bGVweUxDQ1RIYndzek1qS25BeWdCSTI3RFZMY1V0X0xMVTZQZ2ZPRUNaU1BjakJRIIEC; bili_jct=613efc1b0e06a2a4fdf7e3679b23228c; DedeUserID=688319368; DedeUserID__ckMd5=5f5dc4f07ec63413; CURRENT_FNVAL=4048; sid=7za7hbl0; b_lsid=10E3E4F8_1A13E4782A4",
+        'cookie': 'buvid3=61979FAF-5F46-4CE9-8DFA-101F02B42D3C28770infoc; b_nut=1790103228; _uuid=C1B641B10-21D10-92101-5A38-1D59BFDBBCDD28491infoc; buvid_fp=3aa6c2513671b9ae8a99a7d8f42cad77; buvid4=6794B7FF-C6B9-0C32-E3EE-AA5EB5A34E1131365-026092302-/KtPZeHW9gETm7AfGjVxMQ%3D%3D; DedeUserID=688319368; DedeUserID__ckMd5=5f5dc4f07ec63413; rpdid=0zbfAGyzmN|HQ6Ng9TF|1GZ|3w1X96jl; LIVE_BUVID=AUTO1717901073244675; CURRENT_QUALITY=0; user_site=CN; default_sites=%5B%22CN%22%2C%22OVERSEAS%22%5D; bili_ticket=eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3OTM5ODE1NTMsImlhdCI6MTc5MzcyMjI5MywicGx0IjotMX0.pWVf-nfRHixlLLG8r5cS3VSEOTBxjg3ZGRLTb2qyGxk; bili_ticket_expires=1793981493; SESSDATA=b10accec%2C1809274354%2C4e82b%2Ab2CjBWL69W0Hg0I0PYJbMJPgN9qOyIUM35iY-Ui-C_kfyRS8msguRNqfFPWX9kJevR4rgSVmVIWEtpVFNBaHpxUmtkZW5SVE1sYlNNUkZsS0JLdkJEYmdvdkNMeXlpWl9GcFdKOHdVLUZRR1JxMDNnMHRGVTFXa2JpQUdLSDk5djhNclRITk9TN0xBIIEC; bili_jct=afb72e5ffcc7c55a5308b1ccc1df8c69; home_feed_column=5; browser_resolution=1530-731; sid=7z0bo2dr; bp_t_offset_688319368=1267554344945844224; CURRENT_FNVAL=2000; b_lsid=C80204B0_1A1B0F9DBCF',
 
     }
     session.proxies = {
@@ -96,7 +96,7 @@ class BiliBiliSpider():
 
     def check_api(self):
         params = {
-            "pn": 1,
+            "pn": 6,
             "ps": 40,
             "tid": 0,
             "special_type": "",
@@ -168,7 +168,6 @@ class BiliBiliSpider():
                 yield kwargs
             params['pn'] += 1
             time.sleep(random.uniform(TIME_DELAY_MIN, TIME_DELAY_MAX))
-            return
             if params['pn'] > end:
                 return
                      
