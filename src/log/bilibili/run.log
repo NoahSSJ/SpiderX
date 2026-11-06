@@ -2,3 +2,1617 @@
 2026-11-05 16:26:55,386 | iZuf678qbjwziqf6763pjzZ | MainThread | INFO | bilibili.py:300 | <module> | 1
 2026-11-05 16:28:37,576 | iZuf678qbjwziqf6763pjzZ | MainThread | INFO | bilibili.py:300 | <module> | 1
 2026-11-05 16:28:45,796 | iZuf678qbjwziqf6763pjzZ | MainThread | INFO | bilibili.py:300 | <module> | 1
+2026-11-06 12:52:22,751 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117562113330096,
+ 'bvid': 'BV1yM4t6RECX',
+ 'mid': 1166997747,
+ 'trace_id': '328643f1-da8d-4d5b-b9b6-ebe0b866c0d1',
+ 'url': 'https://www.bilibili.com/BV1yM4t6RECX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,755 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第1个url入队，url:https://www.bilibili.com/BV1yM4t6RECX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,759 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117556862061796,
+ 'bvid': 'BV1skxQ6dEvy',
+ 'mid': 1166997747,
+ 'trace_id': 'ff380888-3cff-4867-9400-e22bf394ee7b',
+ 'url': 'https://www.bilibili.com/BV1skxQ6dEvy?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,763 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第2个url入队，url:https://www.bilibili.com/BV1skxQ6dEvy?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,767 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117522569366505,
+ 'bvid': 'BV176sZ6tEXs',
+ 'mid': 1166997747,
+ 'trace_id': 'f31a3d44-af8d-41c0-9409-107c009b594b',
+ 'url': 'https://www.bilibili.com/BV176sZ6tEXs?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,771 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第3个url入队，url:https://www.bilibili.com/BV176sZ6tEXs?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,775 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117508090629005,
+ 'bvid': 'BV17xno65EWb',
+ 'mid': 1166997747,
+ 'trace_id': '6b6b97bf-b7b0-48e1-a733-d85e46df506c',
+ 'url': 'https://www.bilibili.com/BV17xno65EWb?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,779 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第4个url入队，url:https://www.bilibili.com/BV17xno65EWb?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,783 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117488561948578,
+ 'bvid': 'BV1iXnx6sEoT',
+ 'mid': 1166997747,
+ 'trace_id': 'f74e1c06-77e5-4921-b9e6-ca2ed57b65b1',
+ 'url': 'https://www.bilibili.com/BV1iXnx6sEoT?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,786 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第5个url入队，url:https://www.bilibili.com/BV1iXnx6sEoT?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,790 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117445863932758,
+ 'bvid': 'BV1eyJ16BEU3',
+ 'mid': 1166997747,
+ 'trace_id': 'e6a55acb-cb89-4327-a738-60ae3abee4c7',
+ 'url': 'https://www.bilibili.com/BV1eyJ16BEU3?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,794 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第6个url入队，url:https://www.bilibili.com/BV1eyJ16BEU3?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,798 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117415916601648,
+ 'bvid': 'BV1kDpg6tELf',
+ 'mid': 1166997747,
+ 'trace_id': '511bc6a2-b7b1-47bb-87c4-eb100665d956',
+ 'url': 'https://www.bilibili.com/BV1kDpg6tELf?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,802 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第7个url入队，url:https://www.bilibili.com/BV1kDpg6tELf?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,806 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117397730233257,
+ 'bvid': 'BV1chpu6WENn',
+ 'mid': 1166997747,
+ 'trace_id': '1ee9ec7a-e446-4e21-9e4c-2408ac0039bb',
+ 'url': 'https://www.bilibili.com/BV1chpu6WENn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,810 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第8个url入队，url:https://www.bilibili.com/BV1chpu6WENn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,814 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117383050037612,
+ 'bvid': 'BV1p9H761EFa',
+ 'mid': 1166997747,
+ 'trace_id': 'bc26bb63-f2af-4e72-8a5e-4bfb1fefb8f9',
+ 'url': 'https://www.bilibili.com/BV1p9H761EFa?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,817 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第9个url入队，url:https://www.bilibili.com/BV1p9H761EFa?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,822 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117372681718272,
+ 'bvid': 'BV18zaS6rEvX',
+ 'mid': 1166997747,
+ 'trace_id': '85dd0e7f-536b-45a1-8622-ce7e9ccc59f2',
+ 'url': 'https://www.bilibili.com/BV18zaS6rEvX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,826 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第10个url入队，url:https://www.bilibili.com/BV18zaS6rEvX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,830 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117363672417260,
+ 'bvid': 'BV1FmYP6YEYW',
+ 'mid': 1166997747,
+ 'trace_id': '7f1a9ff5-860c-4d0a-8282-0890ec8176ee',
+ 'url': 'https://www.bilibili.com/BV1FmYP6YEYW?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,834 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第11个url入队，url:https://www.bilibili.com/BV1FmYP6YEYW?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,838 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117352716831859,
+ 'bvid': 'BV1wran6mESj',
+ 'mid': 1166997747,
+ 'trace_id': '29564a6a-0151-411a-89fe-d2e0ca44e03b',
+ 'url': 'https://www.bilibili.com/BV1wran6mESj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,842 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第12个url入队，url:https://www.bilibili.com/BV1wran6mESj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,847 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117342348576807,
+ 'bvid': 'BV1uxa86SEc5',
+ 'mid': 1166997747,
+ 'trace_id': '05eaf917-eccf-4a60-b73f-02135d07d53e',
+ 'url': 'https://www.bilibili.com/BV1uxa86SEc5?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,851 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第13个url入队，url:https://www.bilibili.com/BV1uxa86SEc5?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,855 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117335889349509,
+ 'bvid': 'BV1ethX6XErv',
+ 'mid': 1166997747,
+ 'trace_id': 'b1e26e8a-fd48-45bb-9f4f-e71290363cc3',
+ 'url': 'https://www.bilibili.com/BV1ethX6XErv?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,859 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第14个url入队，url:https://www.bilibili.com/BV1ethX6XErv?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,863 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117321561607530,
+ 'bvid': 'BV164hf6mEGV',
+ 'mid': 1166997747,
+ 'trace_id': '0bfad9ab-6e04-49c1-abdb-236c4783c2c6',
+ 'url': 'https://www.bilibili.com/BV164hf6mEGV?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,866 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第15个url入队，url:https://www.bilibili.com/BV164hf6mEGV?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,870 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117314867433120,
+ 'bvid': 'BV1gehE6DEu7',
+ 'mid': 1166997747,
+ 'trace_id': '1c795195-2c29-4e38-868d-5a518824f5d6',
+ 'url': 'https://www.bilibili.com/BV1gehE6DEu7?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,874 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第16个url入队，url:https://www.bilibili.com/BV1gehE6DEu7?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,878 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117302754347175,
+ 'bvid': 'BV1iJeq69E9Z',
+ 'mid': 1166997747,
+ 'trace_id': '7577b05f-67dc-4d58-a998-55479ddb5493',
+ 'url': 'https://www.bilibili.com/BV1iJeq69E9Z?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,882 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第17个url入队，url:https://www.bilibili.com/BV1iJeq69E9Z?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,886 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117292654398055,
+ 'bvid': 'BV1YMeS6SEmj',
+ 'mid': 1166997747,
+ 'trace_id': '4e5bd266-0654-42c5-bb90-883d033b2346',
+ 'url': 'https://www.bilibili.com/BV1YMeS6SEmj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,890 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第18个url入队，url:https://www.bilibili.com/BV1YMeS6SEmj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,894 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117291127672058,
+ 'bvid': 'BV145e16FEgH',
+ 'mid': 1166997747,
+ 'trace_id': '2d292d96-9d5f-41ad-be77-b78b2e0ec2a0',
+ 'url': 'https://www.bilibili.com/BV145e16FEgH?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,898 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第19个url入队，url:https://www.bilibili.com/BV145e16FEgH?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,901 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117285155046229,
+ 'bvid': 'BV13Weg6TEkS',
+ 'mid': 1166997747,
+ 'trace_id': 'e47f699e-3e28-4cf9-9431-276a954ab074',
+ 'url': 'https://www.bilibili.com/BV13Weg6TEkS?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,905 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第20个url入队，url:https://www.bilibili.com/BV13Weg6TEkS?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,909 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117269753564674,
+ 'bvid': 'BV1n7Yy6LEcT',
+ 'mid': 1166997747,
+ 'trace_id': '0ba6378f-c78a-4600-9ae0-2e9120967055',
+ 'url': 'https://www.bilibili.com/BV1n7Yy6LEcT?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,913 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第21个url入队，url:https://www.bilibili.com/BV1n7Yy6LEcT?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,916 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117241148343992,
+ 'bvid': 'BV16tYt6YE6c',
+ 'mid': 1166997747,
+ 'trace_id': '44f72720-5faf-4216-bf15-f420beed849f',
+ 'url': 'https://www.bilibili.com/BV16tYt6YE6c?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,920 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第22个url入队，url:https://www.bilibili.com/BV16tYt6YE6c?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,924 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117230142557230,
+ 'bvid': 'BV1DobT6EE4V',
+ 'mid': 1166997747,
+ 'trace_id': '1a5e8220-78d1-41d0-a71d-e8050d157c90',
+ 'url': 'https://www.bilibili.com/BV1DobT6EE4V?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,928 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第23个url入队，url:https://www.bilibili.com/BV1DobT6EE4V?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,932 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117216603342467,
+ 'bvid': 'BV1VYt16xE7w',
+ 'mid': 1166997747,
+ 'trace_id': 'f0e5f79f-42f5-4b1e-a775-c9ecbdbfc10b',
+ 'url': 'https://www.bilibili.com/BV1VYt16xE7w?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,936 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第24个url入队，url:https://www.bilibili.com/BV1VYt16xE7w?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,939 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117216603344077,
+ 'bvid': 'BV1GYt16xE81',
+ 'mid': 1166997747,
+ 'trace_id': 'f8119fe0-9be3-4b49-a7d0-9721029c57dc',
+ 'url': 'https://www.bilibili.com/BV1GYt16xE81?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,943 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第25个url入队，url:https://www.bilibili.com/BV1GYt16xE81?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,947 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117213415605914,
+ 'bvid': 'BV1aNt66uEbR',
+ 'mid': 1166997747,
+ 'trace_id': 'bc90dd42-c5f4-41f5-9107-88ecae574e41',
+ 'url': 'https://www.bilibili.com/BV1aNt66uEbR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,950 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第26个url入队，url:https://www.bilibili.com/BV1aNt66uEbR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,954 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117207308698883,
+ 'bvid': 'BV1Qdtd6JEg9',
+ 'mid': 1166997747,
+ 'trace_id': '0d9cded1-c391-4f60-9160-4edeb8246b59',
+ 'url': 'https://www.bilibili.com/BV1Qdtd6JEg9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,958 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第27个url入队，url:https://www.bilibili.com/BV1Qdtd6JEg9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,961 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117195463985732,
+ 'bvid': 'BV1gRtg6WEzX',
+ 'mid': 1166997747,
+ 'trace_id': 'ed22d6fc-a14c-4e52-b496-c9dfd3448e51',
+ 'url': 'https://www.bilibili.com/BV1gRtg6WEzX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,965 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第28个url入队，url:https://www.bilibili.com/BV1gRtg6WEzX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,969 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117190766365987,
+ 'bvid': 'BV1geta67EFZ',
+ 'mid': 1166997747,
+ 'trace_id': '44cc12af-2aa5-4f28-98df-ed54d869ebba',
+ 'url': 'https://www.bilibili.com/BV1geta67EFZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,972 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第29个url入队，url:https://www.bilibili.com/BV1geta67EFZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,976 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117179357989698,
+ 'bvid': 'BV1yp416uEgc',
+ 'mid': 1166997747,
+ 'trace_id': '18cada43-ac29-47a8-b072-74e3c4536a49',
+ 'url': 'https://www.bilibili.com/BV1yp416uEgc?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,980 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第30个url入队，url:https://www.bilibili.com/BV1yp416uEgc?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,984 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117162513533504,
+ 'bvid': 'BV1ZH8Z6MEYy',
+ 'mid': 1166997747,
+ 'trace_id': '2675268b-60e6-46a9-ad0d-dbe4826e09bf',
+ 'url': 'https://www.bilibili.com/BV1ZH8Z6MEYy?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,987 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第31个url入队，url:https://www.bilibili.com/BV1ZH8Z6MEYy?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,991 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117156473735257,
+ 'bvid': 'BV1Mhh56TE8s',
+ 'mid': 1166997747,
+ 'trace_id': '9119268a-41fc-48ce-9eea-94ee8ad2fcbf',
+ 'url': 'https://www.bilibili.com/BV1Mhh56TE8s?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:22,995 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第32个url入队，url:https://www.bilibili.com/BV1Mhh56TE8s?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:22,998 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117149209201438,
+ 'bvid': 'BV1iW8v6BEe6',
+ 'mid': 1166997747,
+ 'trace_id': '0222b867-fe4f-4e07-91c2-9c6b50a27bf0',
+ 'url': 'https://www.bilibili.com/BV1iW8v6BEe6?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,002 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第33个url入队，url:https://www.bilibili.com/BV1iW8v6BEe6?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,006 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117132935301949,
+ 'bvid': 'BV1Df8i6YEAq',
+ 'mid': 1166997747,
+ 'trace_id': 'c95b21a6-890c-48d0-802b-8e39aff539c5',
+ 'url': 'https://www.bilibili.com/BV1Df8i6YEAq?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,010 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第34个url入队，url:https://www.bilibili.com/BV1Df8i6YEAq?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,014 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117122617445137,
+ 'bvid': 'BV1v78J6tEfS',
+ 'mid': 1166997747,
+ 'trace_id': 'f365756f-e379-45ae-afe4-6f484c1505f3',
+ 'url': 'https://www.bilibili.com/BV1v78J6tEfS?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,017 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第35个url入队，url:https://www.bilibili.com/BV1v78J6tEfS?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,021 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117116963392442,
+ 'bvid': 'BV1qz836gEyA',
+ 'mid': 1166997747,
+ 'trace_id': '240cec27-0dc9-4b4d-9b79-f771677cbe7b',
+ 'url': 'https://www.bilibili.com/BV1qz836gEyA?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,025 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第36个url入队，url:https://www.bilibili.com/BV1qz836gEyA?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,029 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117116963392421,
+ 'bvid': 'BV1qz836gEyY',
+ 'mid': 1166997747,
+ 'trace_id': '62107526-a4ad-4971-8138-d939e8d843f6',
+ 'url': 'https://www.bilibili.com/BV1qz836gEyY?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,033 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第37个url入队，url:https://www.bilibili.com/BV1qz836gEyY?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,037 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117110856485910,
+ 'bvid': 'BV17ube6KEUi',
+ 'mid': 1166997747,
+ 'trace_id': '180a0c9f-e026-4253-9394-7aab02d384e5',
+ 'url': 'https://www.bilibili.com/BV17ube6KEUi?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,041 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第38个url入队，url:https://www.bilibili.com/BV17ube6KEUi?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,045 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117104195931828,
+ 'bvid': 'BV1sxbD6bE4t',
+ 'mid': 1166997747,
+ 'trace_id': '36d7668c-89f5-43ab-9911-e9eb3942b108',
+ 'url': 'https://www.bilibili.com/BV1sxbD6bE4t?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,049 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第39个url入队，url:https://www.bilibili.com/BV1sxbD6bE4t?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,052 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117097367604221,
+ 'bvid': 'BV1e4g36SE3P',
+ 'mid': 1166997747,
+ 'trace_id': '03d7d52e-3f84-41ef-a265-defdafcaa9fc',
+ 'url': 'https://www.bilibili.com/BV1e4g36SE3P?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,056 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第40个url入队，url:https://www.bilibili.com/BV1e4g36SE3P?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,501 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117093978670651,
+ 'bvid': 'BV1s7gK6HEcm',
+ 'mid': 1166997747,
+ 'trace_id': '59bb6745-bcbb-4462-b024-790b47c470ac',
+ 'url': 'https://www.bilibili.com/BV1s7gK6HEcm?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,505 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第41个url入队，url:https://www.bilibili.com/BV1s7gK6HEcm?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,509 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117077587331068,
+ 'bvid': 'BV1N3ur6JE7D',
+ 'mid': 1166997747,
+ 'trace_id': '0baa3088-c649-4585-ae4e-94c7ef01c21a',
+ 'url': 'https://www.bilibili.com/BV1N3ur6JE7D?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,513 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第42个url入队，url:https://www.bilibili.com/BV1N3ur6JE7D?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,517 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117064249379511,
+ 'bvid': 'BV1Suu16KEMb',
+ 'mid': 1166997747,
+ 'trace_id': '504d0a34-2a4c-45de-94e6-e9a9fc7865f4',
+ 'url': 'https://www.bilibili.com/BV1Suu16KEMb?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,521 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第43个url入队，url:https://www.bilibili.com/BV1Suu16KEMb?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,525 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117059384116795,
+ 'bvid': 'BV1XWuG6mExC',
+ 'mid': 1166997747,
+ 'trace_id': '80f9c360-1826-48ee-a061-a319262d2d68',
+ 'url': 'https://www.bilibili.com/BV1XWuG6mExC?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,529 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第44个url入队，url:https://www.bilibili.com/BV1XWuG6mExC?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,532 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117052958312360,
+ 'bvid': 'BV1nBub6GEtH',
+ 'mid': 1166997747,
+ 'trace_id': '38e2fb74-63f1-4ac7-9e07-1322166e0805',
+ 'url': 'https://www.bilibili.com/BV1nBub6GEtH?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,536 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第45个url入队，url:https://www.bilibili.com/BV1nBub6GEtH?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,540 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117037909148137,
+ 'bvid': 'BV1ArMB6MEdC',
+ 'mid': 1166997747,
+ 'trace_id': '7b892cb2-107f-4a31-bfa3-33f2bcddd912',
+ 'url': 'https://www.bilibili.com/BV1ArMB6MEdC?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,543 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第46个url入队，url:https://www.bilibili.com/BV1ArMB6MEdC?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,548 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117031198263625,
+ 'bvid': 'BV1hgMX6REuM',
+ 'mid': 1166997747,
+ 'trace_id': 'e3f4bfed-e253-49ed-be3a-fe1fc7a2b5f1',
+ 'url': 'https://www.bilibili.com/BV1hgMX6REuM?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,552 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第47个url入队，url:https://www.bilibili.com/BV1hgMX6REuM?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,556 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117026366491090,
+ 'bvid': 'BV1Q63d6kEt3',
+ 'mid': 1166997747,
+ 'trace_id': '4a1db9b8-07ba-4c94-b8a4-0fdfc099fe1e',
+ 'url': 'https://www.bilibili.com/BV1Q63d6kEt3?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,560 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第48个url入队，url:https://www.bilibili.com/BV1Q63d6kEt3?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,564 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117023094933885,
+ 'bvid': 'BV1Ly3D6vETn',
+ 'mid': 1166997747,
+ 'trace_id': 'f03a381b-b323-4a16-a8a8-20c6a3428cd5',
+ 'url': 'https://www.bilibili.com/BV1Ly3D6vETn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,568 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第49个url入队，url:https://www.bilibili.com/BV1Ly3D6vETn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,572 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117015612230605,
+ 'bvid': 'BV11hGK6bEBP',
+ 'mid': 1166997747,
+ 'trace_id': '400d0d6a-9eed-40af-b2f5-7b4cb4cf340e',
+ 'url': 'https://www.bilibili.com/BV11hGK6bEBP?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,575 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第50个url入队，url:https://www.bilibili.com/BV11hGK6bEBP?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,579 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117012676283039,
+ 'bvid': 'BV1rgGc6BEuE',
+ 'mid': 1166997747,
+ 'trace_id': '01126209-eb94-4e07-afb4-76e6f010b444',
+ 'url': 'https://www.bilibili.com/BV1rgGc6BEuE?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,583 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第51个url入队，url:https://www.bilibili.com/BV1rgGc6BEuE?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,587 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117012676282254,
+ 'bvid': 'BV1rgGc6BEa6',
+ 'mid': 1166997747,
+ 'trace_id': 'c0e408e3-f828-4588-938d-e05be897e00b',
+ 'url': 'https://www.bilibili.com/BV1rgGc6BEa6?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,591 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第52个url入队，url:https://www.bilibili.com/BV1rgGc6BEa6?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,594 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117009304062541,
+ 'bvid': 'BV1xC3b6dEYw',
+ 'mid': 1166997747,
+ 'trace_id': 'fe4abe14-9500-4b25-8a55-7ef37a35a3b3',
+ 'url': 'https://www.bilibili.com/BV1xC3b6dEYw?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,598 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第53个url入队，url:https://www.bilibili.com/BV1xC3b6dEYw?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,602 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117007072626287,
+ 'bvid': 'BV1XP3x6REPZ',
+ 'mid': 1166997747,
+ 'trace_id': '0dddd0dc-a42a-4bd2-bf06-708fd6398db5',
+ 'url': 'https://www.bilibili.com/BV1XP3x6REPZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,606 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第54个url入队，url:https://www.bilibili.com/BV1XP3x6REPZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,610 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117003935288019,
+ 'bvid': 'BV1AY3n6hEDE',
+ 'mid': 1166997747,
+ 'trace_id': '30bcdf28-e585-4c6c-9ea7-6c0f18e44383',
+ 'url': 'https://www.bilibili.com/BV1AY3n6hEDE?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,614 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第55个url入队，url:https://www.bilibili.com/BV1AY3n6hEDE?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,617 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 117002140255763,
+ 'bvid': 'BV19R3C6yEyQ',
+ 'mid': 1166997747,
+ 'trace_id': 'a321dc94-eb55-4185-9e47-7dd8cc4ff9e8',
+ 'url': 'https://www.bilibili.com/BV19R3C6yEyQ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,621 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第56个url入队，url:https://www.bilibili.com/BV19R3C6yEyQ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,625 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116998147145847,
+ 'bvid': 'BV1763z6BEuK',
+ 'mid': 1166997747,
+ 'trace_id': '03e50be3-9ba7-4e65-8f43-ab980cc54991',
+ 'url': 'https://www.bilibili.com/BV1763z6BEuK?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,629 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第57个url入队，url:https://www.bilibili.com/BV1763z6BEuK?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,633 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116998147147619,
+ 'bvid': 'BV1763z6BEP9',
+ 'mid': 1166997747,
+ 'trace_id': 'dde41567-e19e-403c-8887-b35cc4eaa419',
+ 'url': 'https://www.bilibili.com/BV1763z6BEP9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,637 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第58个url入队，url:https://www.bilibili.com/BV1763z6BEP9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,640 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116997157356953,
+ 'bvid': 'BV1xc3B6jEAY',
+ 'mid': 1166997747,
+ 'trace_id': '12337685-d2e2-43f2-a24f-c2c787f766e7',
+ 'url': 'https://www.bilibili.com/BV1xc3B6jEAY?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,644 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第59个url入队，url:https://www.bilibili.com/BV1xc3B6jEAY?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,648 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116997157358258,
+ 'bvid': 'BV1sc3B6jESf',
+ 'mid': 1166997747,
+ 'trace_id': 'dc665a74-1982-4d17-b353-d6e9be918d31',
+ 'url': 'https://www.bilibili.com/BV1sc3B6jESf?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,651 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第60个url入队，url:https://www.bilibili.com/BV1sc3B6jESf?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,655 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116992577111535,
+ 'bvid': 'BV1HH3c6TE4n',
+ 'mid': 1166997747,
+ 'trace_id': 'c915fa78-c818-43bf-a993-3d07d9ea6206',
+ 'url': 'https://www.bilibili.com/BV1HH3c6TE4n?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,659 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第61个url入队，url:https://www.bilibili.com/BV1HH3c6TE4n?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,663 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116992577243593,
+ 'bvid': 'BV1wH3c6MENZ',
+ 'mid': 1166997747,
+ 'trace_id': '29592dec-5ade-4e92-8032-23787b8ff60c',
+ 'url': 'https://www.bilibili.com/BV1wH3c6MENZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,667 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第62个url入队，url:https://www.bilibili.com/BV1wH3c6MENZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,671 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116992577113056,
+ 'bvid': 'BV1HH3c6TE7B',
+ 'mid': 1166997747,
+ 'trace_id': '43d4681c-0373-4913-a95f-d7222b4d7897',
+ 'url': 'https://www.bilibili.com/BV1HH3c6TE7B?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,675 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第63个url入队，url:https://www.bilibili.com/BV1HH3c6TE7B?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,678 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116992577111734,
+ 'bvid': 'BV1HH3c6TEay',
+ 'mid': 1166997747,
+ 'trace_id': '495f1e15-6cd1-400e-a0aa-b76df52afaee',
+ 'url': 'https://www.bilibili.com/BV1HH3c6TEay?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,682 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第64个url入队，url:https://www.bilibili.com/BV1HH3c6TEay?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,686 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116986990299075,
+ 'bvid': 'BV1ZRgX6rEvn',
+ 'mid': 1166997747,
+ 'trace_id': 'dbcfd28c-b8e0-4b9b-9d0a-f1f632b71550',
+ 'url': 'https://www.bilibili.com/BV1ZRgX6rEvn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,690 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第65个url入队，url:https://www.bilibili.com/BV1ZRgX6rEvn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,693 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116980128417522,
+ 'bvid': 'BV1rc336hEwR',
+ 'mid': 1166997747,
+ 'trace_id': '196c02ab-f498-49e3-9520-169f55944b09',
+ 'url': 'https://www.bilibili.com/BV1rc336hEwR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,697 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第66个url入队，url:https://www.bilibili.com/BV1rc336hEwR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,701 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116963368045113,
+ 'bvid': 'BV1AKgC6sEaj',
+ 'mid': 1166997747,
+ 'trace_id': 'a5e93be8-e5e3-492e-a8f3-ac170d0d12cd',
+ 'url': 'https://www.bilibili.com/BV1AKgC6sEaj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,705 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第67个url入队，url:https://www.bilibili.com/BV1AKgC6sEaj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,709 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116963367979867,
+ 'bvid': 'BV1CKgC6WEKP',
+ 'mid': 1166997747,
+ 'trace_id': '9851fd35-b7cf-4be7-89bf-e3d4e5465a98',
+ 'url': 'https://www.bilibili.com/BV1CKgC6WEKP?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,713 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第68个url入队，url:https://www.bilibili.com/BV1CKgC6WEKP?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,717 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116963367979844,
+ 'bvid': 'BV1CKgC6WEKi',
+ 'mid': 1166997747,
+ 'trace_id': '35f80cb4-0e0b-4572-92df-f7ddc7a2ffb3',
+ 'url': 'https://www.bilibili.com/BV1CKgC6WEKi?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,721 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第69个url入队，url:https://www.bilibili.com/BV1CKgC6WEKi?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,725 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116963368109336,
+ 'bvid': 'BV1WKgC6sEVR',
+ 'mid': 1166997747,
+ 'trace_id': 'cff4bfea-e9db-4b5c-8b28-3ee27da8b906',
+ 'url': 'https://www.bilibili.com/BV1WKgC6sEVR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,728 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第70个url入队，url:https://www.bilibili.com/BV1WKgC6sEVR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,732 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116963368044547,
+ 'bvid': 'BV1AKgC6sEpj',
+ 'mid': 1166997747,
+ 'trace_id': 'cbdd5e44-8c09-4126-8caa-4788dc6c12ac',
+ 'url': 'https://www.bilibili.com/BV1AKgC6sEpj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,736 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第71个url入队，url:https://www.bilibili.com/BV1AKgC6sEpj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,740 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116963267313832,
+ 'bvid': 'BV1mogk68E2D',
+ 'mid': 1166997747,
+ 'trace_id': 'd3622ee8-6e1b-437b-840d-ca5663252ab6',
+ 'url': 'https://www.bilibili.com/BV1mogk68E2D?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,744 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第72个url入队，url:https://www.bilibili.com/BV1mogk68E2D?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,747 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116957462399686,
+ 'bvid': 'BV1WgKa67Erk',
+ 'mid': 1166997747,
+ 'trace_id': 'fe91c962-d4c2-4051-82d1-a24405f892c3',
+ 'url': 'https://www.bilibili.com/BV1WgKa67Erk?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,751 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第73个url入队，url:https://www.bilibili.com/BV1WgKa67Erk?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,755 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116957462595933,
+ 'bvid': 'BV1sgKa6EEN9',
+ 'mid': 1166997747,
+ 'trace_id': '16c7ee04-ae91-432b-86ed-a14e2daff44d',
+ 'url': 'https://www.bilibili.com/BV1sgKa6EEN9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,759 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第74个url入队，url:https://www.bilibili.com/BV1sgKa6EEN9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,763 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116957462399054,
+ 'bvid': 'BV1WgKa67Eeo',
+ 'mid': 1166997747,
+ 'trace_id': '4dd0371b-d206-4c73-a33d-d4da14350c78',
+ 'url': 'https://www.bilibili.com/BV1WgKa67Eeo?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,766 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第75个url入队，url:https://www.bilibili.com/BV1WgKa67Eeo?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,770 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116957294626699,
+ 'bvid': 'BV1ULKb6jEZn',
+ 'mid': 1166997747,
+ 'trace_id': '960c09b3-6035-4f16-a535-3c9a673bc04c',
+ 'url': 'https://www.bilibili.com/BV1ULKb6jEZn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,774 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第76个url入队，url:https://www.bilibili.com/BV1ULKb6jEZn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,777 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116951825385808,
+ 'bvid': 'BV1y7Km6ZE43',
+ 'mid': 1166997747,
+ 'trace_id': 'a11708f0-4c43-4831-bf79-6b2de83522c4',
+ 'url': 'https://www.bilibili.com/BV1y7Km6ZE43?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,781 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第77个url入队，url:https://www.bilibili.com/BV1y7Km6ZE43?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,785 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116951825320219,
+ 'bvid': 'BV1W7Km6ZEfg',
+ 'mid': 1166997747,
+ 'trace_id': '2077bc0e-159c-48c8-9577-26d9a081f837',
+ 'url': 'https://www.bilibili.com/BV1W7Km6ZEfg?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,789 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第78个url入队，url:https://www.bilibili.com/BV1W7Km6ZEfg?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,793 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116950449586223,
+ 'bvid': 'BV1MUK16fEgZ',
+ 'mid': 1166997747,
+ 'trace_id': 'e7b8f1ce-bfe5-49a5-9546-9f343a6050a2',
+ 'url': 'https://www.bilibili.com/BV1MUK16fEgZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,797 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第79个url入队，url:https://www.bilibili.com/BV1MUK16fEgZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 12:52:23,801 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:177 | generate_urls | {'aid': 116950432811249,
+ 'bvid': 'BV1uyK16aE6M',
+ 'mid': 1166997747,
+ 'trace_id': '32301d5b-a678-440e-a700-fd232ac6efc0',
+ 'url': 'https://www.bilibili.com/BV1uyK16aE6M?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 12:52:23,805 | iZuf678qbjwziqf6763pjzZ | 190659 | MainThread | INFO | bilibili.py:187 | process_urls | 第80个url入队，url:https://www.bilibili.com/BV1uyK16aE6M?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,675 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117562113330096,
+ 'bvid': 'BV1yM4t6RECX',
+ 'mid': 1166997747,
+ 'trace_id': '25e7cfaa-8b90-406a-a28f-d41df7e4e6bc',
+ 'url': 'https://www.bilibili.com/BV1yM4t6RECX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,680 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第1个url入队，url:https://www.bilibili.com/BV1yM4t6RECX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,684 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117556862061796,
+ 'bvid': 'BV1skxQ6dEvy',
+ 'mid': 1166997747,
+ 'trace_id': '21107007-bd66-49c3-bbac-f28015d794fb',
+ 'url': 'https://www.bilibili.com/BV1skxQ6dEvy?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,687 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第2个url入队，url:https://www.bilibili.com/BV1skxQ6dEvy?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,692 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117522569366505,
+ 'bvid': 'BV176sZ6tEXs',
+ 'mid': 1166997747,
+ 'trace_id': 'cf8e2636-0163-433b-a724-9598ab5dfb54',
+ 'url': 'https://www.bilibili.com/BV176sZ6tEXs?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,695 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第3个url入队，url:https://www.bilibili.com/BV176sZ6tEXs?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,699 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117508090629005,
+ 'bvid': 'BV17xno65EWb',
+ 'mid': 1166997747,
+ 'trace_id': '5e3f077d-5919-476a-a6eb-cbab0e8a29c1',
+ 'url': 'https://www.bilibili.com/BV17xno65EWb?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,703 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第4个url入队，url:https://www.bilibili.com/BV17xno65EWb?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,707 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117488561948578,
+ 'bvid': 'BV1iXnx6sEoT',
+ 'mid': 1166997747,
+ 'trace_id': '516757ea-44b3-448b-80fd-73b68abf91ff',
+ 'url': 'https://www.bilibili.com/BV1iXnx6sEoT?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,711 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第5个url入队，url:https://www.bilibili.com/BV1iXnx6sEoT?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,715 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117445863932758,
+ 'bvid': 'BV1eyJ16BEU3',
+ 'mid': 1166997747,
+ 'trace_id': 'b2309032-9ede-474d-a931-86f1c5899547',
+ 'url': 'https://www.bilibili.com/BV1eyJ16BEU3?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,718 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第6个url入队，url:https://www.bilibili.com/BV1eyJ16BEU3?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,722 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117415916601648,
+ 'bvid': 'BV1kDpg6tELf',
+ 'mid': 1166997747,
+ 'trace_id': '54d2f784-13df-4fe8-aa84-91d87f51aa56',
+ 'url': 'https://www.bilibili.com/BV1kDpg6tELf?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,726 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第7个url入队，url:https://www.bilibili.com/BV1kDpg6tELf?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,729 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117397730233257,
+ 'bvid': 'BV1chpu6WENn',
+ 'mid': 1166997747,
+ 'trace_id': '388da2b9-ebed-4808-a329-eef0c988de7c',
+ 'url': 'https://www.bilibili.com/BV1chpu6WENn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,733 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第8个url入队，url:https://www.bilibili.com/BV1chpu6WENn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,737 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117383050037612,
+ 'bvid': 'BV1p9H761EFa',
+ 'mid': 1166997747,
+ 'trace_id': 'e3db16f2-6bc3-424f-8c04-18288cf55643',
+ 'url': 'https://www.bilibili.com/BV1p9H761EFa?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,741 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第9个url入队，url:https://www.bilibili.com/BV1p9H761EFa?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,744 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117372681718272,
+ 'bvid': 'BV18zaS6rEvX',
+ 'mid': 1166997747,
+ 'trace_id': 'bbe45efd-0edc-446a-97c0-85b13b569657',
+ 'url': 'https://www.bilibili.com/BV18zaS6rEvX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,748 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第10个url入队，url:https://www.bilibili.com/BV18zaS6rEvX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,752 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117363672417260,
+ 'bvid': 'BV1FmYP6YEYW',
+ 'mid': 1166997747,
+ 'trace_id': 'b747f944-6da8-4e12-bc09-2b4ede32cb6a',
+ 'url': 'https://www.bilibili.com/BV1FmYP6YEYW?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,756 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第11个url入队，url:https://www.bilibili.com/BV1FmYP6YEYW?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,759 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117352716831859,
+ 'bvid': 'BV1wran6mESj',
+ 'mid': 1166997747,
+ 'trace_id': 'f8e79850-9446-4390-91b3-dde3d50b3a4c',
+ 'url': 'https://www.bilibili.com/BV1wran6mESj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,763 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第12个url入队，url:https://www.bilibili.com/BV1wran6mESj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,767 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117342348576807,
+ 'bvid': 'BV1uxa86SEc5',
+ 'mid': 1166997747,
+ 'trace_id': 'ae448270-d07f-445d-b6ae-2364b813a6cd',
+ 'url': 'https://www.bilibili.com/BV1uxa86SEc5?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,770 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第13个url入队，url:https://www.bilibili.com/BV1uxa86SEc5?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,774 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117335889349509,
+ 'bvid': 'BV1ethX6XErv',
+ 'mid': 1166997747,
+ 'trace_id': '0310088d-8760-4080-9811-c8eb5417019b',
+ 'url': 'https://www.bilibili.com/BV1ethX6XErv?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,778 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第14个url入队，url:https://www.bilibili.com/BV1ethX6XErv?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,782 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117321561607530,
+ 'bvid': 'BV164hf6mEGV',
+ 'mid': 1166997747,
+ 'trace_id': '6f48debd-f89b-4264-aa8b-3acb10128dfe',
+ 'url': 'https://www.bilibili.com/BV164hf6mEGV?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,785 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第15个url入队，url:https://www.bilibili.com/BV164hf6mEGV?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,789 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117314867433120,
+ 'bvid': 'BV1gehE6DEu7',
+ 'mid': 1166997747,
+ 'trace_id': 'f1bc02f9-59cf-4074-8cc5-4f05dd71bc4a',
+ 'url': 'https://www.bilibili.com/BV1gehE6DEu7?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,792 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第16个url入队，url:https://www.bilibili.com/BV1gehE6DEu7?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,796 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117302754347175,
+ 'bvid': 'BV1iJeq69E9Z',
+ 'mid': 1166997747,
+ 'trace_id': '05868fc2-8a19-45cb-8c81-79f980fd0918',
+ 'url': 'https://www.bilibili.com/BV1iJeq69E9Z?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,800 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第17个url入队，url:https://www.bilibili.com/BV1iJeq69E9Z?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,803 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117292654398055,
+ 'bvid': 'BV1YMeS6SEmj',
+ 'mid': 1166997747,
+ 'trace_id': '38253b48-92b6-4381-98de-e67e5e95ff61',
+ 'url': 'https://www.bilibili.com/BV1YMeS6SEmj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,807 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第18个url入队，url:https://www.bilibili.com/BV1YMeS6SEmj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,811 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117291127672058,
+ 'bvid': 'BV145e16FEgH',
+ 'mid': 1166997747,
+ 'trace_id': '6bce418f-147b-4fea-820d-3bb5c94d64c1',
+ 'url': 'https://www.bilibili.com/BV145e16FEgH?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,814 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第19个url入队，url:https://www.bilibili.com/BV145e16FEgH?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,818 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117285155046229,
+ 'bvid': 'BV13Weg6TEkS',
+ 'mid': 1166997747,
+ 'trace_id': '75f1a419-1ded-4b6c-bb55-8e29554b8dc6',
+ 'url': 'https://www.bilibili.com/BV13Weg6TEkS?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,822 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第20个url入队，url:https://www.bilibili.com/BV13Weg6TEkS?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,826 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117269753564674,
+ 'bvid': 'BV1n7Yy6LEcT',
+ 'mid': 1166997747,
+ 'trace_id': '957f0323-f563-433c-969c-270414e9b61e',
+ 'url': 'https://www.bilibili.com/BV1n7Yy6LEcT?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,829 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第21个url入队，url:https://www.bilibili.com/BV1n7Yy6LEcT?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,833 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117241148343992,
+ 'bvid': 'BV16tYt6YE6c',
+ 'mid': 1166997747,
+ 'trace_id': 'd36006ee-ae68-4eb9-9a44-e547a7c25372',
+ 'url': 'https://www.bilibili.com/BV16tYt6YE6c?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,837 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第22个url入队，url:https://www.bilibili.com/BV16tYt6YE6c?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,841 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117230142557230,
+ 'bvid': 'BV1DobT6EE4V',
+ 'mid': 1166997747,
+ 'trace_id': '98fc68f7-e739-4968-b7df-ac6b88bab5d2',
+ 'url': 'https://www.bilibili.com/BV1DobT6EE4V?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,845 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第23个url入队，url:https://www.bilibili.com/BV1DobT6EE4V?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,849 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117216603342467,
+ 'bvid': 'BV1VYt16xE7w',
+ 'mid': 1166997747,
+ 'trace_id': '7efb0e44-ec52-4310-8003-4674a5498f5d',
+ 'url': 'https://www.bilibili.com/BV1VYt16xE7w?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,852 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第24个url入队，url:https://www.bilibili.com/BV1VYt16xE7w?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,856 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117216603344077,
+ 'bvid': 'BV1GYt16xE81',
+ 'mid': 1166997747,
+ 'trace_id': '7f00d022-c8f4-4e26-bee7-31105e1d328e',
+ 'url': 'https://www.bilibili.com/BV1GYt16xE81?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,859 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第25个url入队，url:https://www.bilibili.com/BV1GYt16xE81?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,863 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117213415605914,
+ 'bvid': 'BV1aNt66uEbR',
+ 'mid': 1166997747,
+ 'trace_id': '56ea6771-647e-4e5e-81f4-0aac75ad4a27',
+ 'url': 'https://www.bilibili.com/BV1aNt66uEbR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,867 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第26个url入队，url:https://www.bilibili.com/BV1aNt66uEbR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,871 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117207308698883,
+ 'bvid': 'BV1Qdtd6JEg9',
+ 'mid': 1166997747,
+ 'trace_id': '27613e0c-cc95-48e5-95b4-943ee1013bde',
+ 'url': 'https://www.bilibili.com/BV1Qdtd6JEg9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,874 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第27个url入队，url:https://www.bilibili.com/BV1Qdtd6JEg9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,878 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117195463985732,
+ 'bvid': 'BV1gRtg6WEzX',
+ 'mid': 1166997747,
+ 'trace_id': 'd8c34ff3-99a3-4e4e-8884-552f51734398',
+ 'url': 'https://www.bilibili.com/BV1gRtg6WEzX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,881 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第28个url入队，url:https://www.bilibili.com/BV1gRtg6WEzX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,885 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117190766365987,
+ 'bvid': 'BV1geta67EFZ',
+ 'mid': 1166997747,
+ 'trace_id': '0954c587-0e20-40d8-8643-67c79eff18b6',
+ 'url': 'https://www.bilibili.com/BV1geta67EFZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,889 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第29个url入队，url:https://www.bilibili.com/BV1geta67EFZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,892 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117179357989698,
+ 'bvid': 'BV1yp416uEgc',
+ 'mid': 1166997747,
+ 'trace_id': '3f4b90bc-96aa-403a-984b-491f506cf0d4',
+ 'url': 'https://www.bilibili.com/BV1yp416uEgc?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,896 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第30个url入队，url:https://www.bilibili.com/BV1yp416uEgc?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,900 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117162513533504,
+ 'bvid': 'BV1ZH8Z6MEYy',
+ 'mid': 1166997747,
+ 'trace_id': '6c3a166a-9d71-45f4-b40c-dc96680b93cd',
+ 'url': 'https://www.bilibili.com/BV1ZH8Z6MEYy?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,903 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第31个url入队，url:https://www.bilibili.com/BV1ZH8Z6MEYy?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,907 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117156473735257,
+ 'bvid': 'BV1Mhh56TE8s',
+ 'mid': 1166997747,
+ 'trace_id': 'e6e688d0-2a46-48f3-bc22-e04a3c749dc6',
+ 'url': 'https://www.bilibili.com/BV1Mhh56TE8s?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,911 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第32个url入队，url:https://www.bilibili.com/BV1Mhh56TE8s?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,914 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117149209201438,
+ 'bvid': 'BV1iW8v6BEe6',
+ 'mid': 1166997747,
+ 'trace_id': 'b67954fc-3e90-442c-8107-b36ac8e44b66',
+ 'url': 'https://www.bilibili.com/BV1iW8v6BEe6?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,918 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第33个url入队，url:https://www.bilibili.com/BV1iW8v6BEe6?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,922 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117132935301949,
+ 'bvid': 'BV1Df8i6YEAq',
+ 'mid': 1166997747,
+ 'trace_id': 'b820e92a-a3dd-4b75-96cc-d6b9a8e47f18',
+ 'url': 'https://www.bilibili.com/BV1Df8i6YEAq?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,925 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第34个url入队，url:https://www.bilibili.com/BV1Df8i6YEAq?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,929 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117122617445137,
+ 'bvid': 'BV1v78J6tEfS',
+ 'mid': 1166997747,
+ 'trace_id': 'd6f50ff7-c4b9-46de-a1cd-11e9f9273484',
+ 'url': 'https://www.bilibili.com/BV1v78J6tEfS?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,932 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第35个url入队，url:https://www.bilibili.com/BV1v78J6tEfS?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,936 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117116963392442,
+ 'bvid': 'BV1qz836gEyA',
+ 'mid': 1166997747,
+ 'trace_id': '776ce5d2-dd9d-4b55-8582-d06f4023a73d',
+ 'url': 'https://www.bilibili.com/BV1qz836gEyA?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,940 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第36个url入队，url:https://www.bilibili.com/BV1qz836gEyA?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,943 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117116963392421,
+ 'bvid': 'BV1qz836gEyY',
+ 'mid': 1166997747,
+ 'trace_id': '9e8dc99b-d186-41eb-bab2-8e76ead3a907',
+ 'url': 'https://www.bilibili.com/BV1qz836gEyY?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,947 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第37个url入队，url:https://www.bilibili.com/BV1qz836gEyY?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,952 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117110856485910,
+ 'bvid': 'BV17ube6KEUi',
+ 'mid': 1166997747,
+ 'trace_id': '1d7a8644-3b09-4903-9c17-f83bbe50c909',
+ 'url': 'https://www.bilibili.com/BV17ube6KEUi?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,956 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第38个url入队，url:https://www.bilibili.com/BV17ube6KEUi?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,960 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117104195931828,
+ 'bvid': 'BV1sxbD6bE4t',
+ 'mid': 1166997747,
+ 'trace_id': '3963fc92-1f07-4ca9-833e-45213dc793b2',
+ 'url': 'https://www.bilibili.com/BV1sxbD6bE4t?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,963 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第39个url入队，url:https://www.bilibili.com/BV1sxbD6bE4t?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:41,967 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117097367604221,
+ 'bvid': 'BV1e4g36SE3P',
+ 'mid': 1166997747,
+ 'trace_id': '250e96ea-6f68-422e-8a65-050c4ffe28ef',
+ 'url': 'https://www.bilibili.com/BV1e4g36SE3P?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:41,971 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第40个url入队，url:https://www.bilibili.com/BV1e4g36SE3P?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,597 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117093978670651,
+ 'bvid': 'BV1s7gK6HEcm',
+ 'mid': 1166997747,
+ 'trace_id': '1440afac-7169-4937-977d-00ee2c67ec6c',
+ 'url': 'https://www.bilibili.com/BV1s7gK6HEcm?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,601 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第41个url入队，url:https://www.bilibili.com/BV1s7gK6HEcm?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,605 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117077587331068,
+ 'bvid': 'BV1N3ur6JE7D',
+ 'mid': 1166997747,
+ 'trace_id': '455339ea-3bca-4714-8541-6a3a44873170',
+ 'url': 'https://www.bilibili.com/BV1N3ur6JE7D?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,609 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第42个url入队，url:https://www.bilibili.com/BV1N3ur6JE7D?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,613 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117064249379511,
+ 'bvid': 'BV1Suu16KEMb',
+ 'mid': 1166997747,
+ 'trace_id': 'b0e20434-8fba-4b1d-bfc0-c73797e1153b',
+ 'url': 'https://www.bilibili.com/BV1Suu16KEMb?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,616 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第43个url入队，url:https://www.bilibili.com/BV1Suu16KEMb?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,620 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117059384116795,
+ 'bvid': 'BV1XWuG6mExC',
+ 'mid': 1166997747,
+ 'trace_id': '42e17f7d-1c73-4d42-9bdb-90ae6ba09289',
+ 'url': 'https://www.bilibili.com/BV1XWuG6mExC?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,624 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第44个url入队，url:https://www.bilibili.com/BV1XWuG6mExC?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,628 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117052958312360,
+ 'bvid': 'BV1nBub6GEtH',
+ 'mid': 1166997747,
+ 'trace_id': '1caffe58-3c12-4ebe-a4f6-6ba92d3d4981',
+ 'url': 'https://www.bilibili.com/BV1nBub6GEtH?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,631 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第45个url入队，url:https://www.bilibili.com/BV1nBub6GEtH?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,635 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117037909148137,
+ 'bvid': 'BV1ArMB6MEdC',
+ 'mid': 1166997747,
+ 'trace_id': '7a999ad5-84d1-4670-82ff-644f7bfcf7f5',
+ 'url': 'https://www.bilibili.com/BV1ArMB6MEdC?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,639 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第46个url入队，url:https://www.bilibili.com/BV1ArMB6MEdC?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,642 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117031198263625,
+ 'bvid': 'BV1hgMX6REuM',
+ 'mid': 1166997747,
+ 'trace_id': '91cf2851-0834-4d03-a3a8-fd1d5e1db756',
+ 'url': 'https://www.bilibili.com/BV1hgMX6REuM?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,646 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第47个url入队，url:https://www.bilibili.com/BV1hgMX6REuM?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,650 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117026366491090,
+ 'bvid': 'BV1Q63d6kEt3',
+ 'mid': 1166997747,
+ 'trace_id': '6efc85e5-047b-47e7-ae21-c69280799b5f',
+ 'url': 'https://www.bilibili.com/BV1Q63d6kEt3?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,654 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第48个url入队，url:https://www.bilibili.com/BV1Q63d6kEt3?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,658 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117023094933885,
+ 'bvid': 'BV1Ly3D6vETn',
+ 'mid': 1166997747,
+ 'trace_id': '0d6c02a1-989f-4df6-a144-6a567fc1062b',
+ 'url': 'https://www.bilibili.com/BV1Ly3D6vETn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,662 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第49个url入队，url:https://www.bilibili.com/BV1Ly3D6vETn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,666 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117015612230605,
+ 'bvid': 'BV11hGK6bEBP',
+ 'mid': 1166997747,
+ 'trace_id': '94812140-eb2f-43da-b4cb-b7bf72f99ec3',
+ 'url': 'https://www.bilibili.com/BV11hGK6bEBP?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,669 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第50个url入队，url:https://www.bilibili.com/BV11hGK6bEBP?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,673 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117012676283039,
+ 'bvid': 'BV1rgGc6BEuE',
+ 'mid': 1166997747,
+ 'trace_id': 'f2723859-5085-46d9-a1e4-78d3ce3a77ed',
+ 'url': 'https://www.bilibili.com/BV1rgGc6BEuE?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,677 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第51个url入队，url:https://www.bilibili.com/BV1rgGc6BEuE?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,681 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117012676282254,
+ 'bvid': 'BV1rgGc6BEa6',
+ 'mid': 1166997747,
+ 'trace_id': 'c3439a8b-7860-46fc-98a9-324ba985d865',
+ 'url': 'https://www.bilibili.com/BV1rgGc6BEa6?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,684 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第52个url入队，url:https://www.bilibili.com/BV1rgGc6BEa6?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,688 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117009304062541,
+ 'bvid': 'BV1xC3b6dEYw',
+ 'mid': 1166997747,
+ 'trace_id': 'e2bf78a0-d25b-4d16-a830-bfbbf82a4439',
+ 'url': 'https://www.bilibili.com/BV1xC3b6dEYw?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,692 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第53个url入队，url:https://www.bilibili.com/BV1xC3b6dEYw?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,696 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117007072626287,
+ 'bvid': 'BV1XP3x6REPZ',
+ 'mid': 1166997747,
+ 'trace_id': '3c1fdebf-9fa8-4fb8-b77f-5cb944d0d2a8',
+ 'url': 'https://www.bilibili.com/BV1XP3x6REPZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,699 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第54个url入队，url:https://www.bilibili.com/BV1XP3x6REPZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,703 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117003935288019,
+ 'bvid': 'BV1AY3n6hEDE',
+ 'mid': 1166997747,
+ 'trace_id': '5e49c2de-08e9-4c84-b806-9b31cdaceed2',
+ 'url': 'https://www.bilibili.com/BV1AY3n6hEDE?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,706 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第55个url入队，url:https://www.bilibili.com/BV1AY3n6hEDE?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,710 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 117002140255763,
+ 'bvid': 'BV19R3C6yEyQ',
+ 'mid': 1166997747,
+ 'trace_id': '01b1ad78-d20a-4154-96df-c1e58c2c0a2d',
+ 'url': 'https://www.bilibili.com/BV19R3C6yEyQ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,714 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第56个url入队，url:https://www.bilibili.com/BV19R3C6yEyQ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,718 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116998147145847,
+ 'bvid': 'BV1763z6BEuK',
+ 'mid': 1166997747,
+ 'trace_id': '3f3c11be-4628-485e-bc69-83c6dea1836b',
+ 'url': 'https://www.bilibili.com/BV1763z6BEuK?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,721 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第57个url入队，url:https://www.bilibili.com/BV1763z6BEuK?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,725 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116998147147619,
+ 'bvid': 'BV1763z6BEP9',
+ 'mid': 1166997747,
+ 'trace_id': '3de2426a-0768-4bb0-901c-6c7d3af1305c',
+ 'url': 'https://www.bilibili.com/BV1763z6BEP9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,728 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第58个url入队，url:https://www.bilibili.com/BV1763z6BEP9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,732 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116997157356953,
+ 'bvid': 'BV1xc3B6jEAY',
+ 'mid': 1166997747,
+ 'trace_id': '62b27f0a-ad09-4d72-8a1e-8c96fafad641',
+ 'url': 'https://www.bilibili.com/BV1xc3B6jEAY?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,736 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第59个url入队，url:https://www.bilibili.com/BV1xc3B6jEAY?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,740 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116997157358258,
+ 'bvid': 'BV1sc3B6jESf',
+ 'mid': 1166997747,
+ 'trace_id': 'bed25e3b-81b3-4cda-8f66-e955aa7fcfcb',
+ 'url': 'https://www.bilibili.com/BV1sc3B6jESf?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,743 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第60个url入队，url:https://www.bilibili.com/BV1sc3B6jESf?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,747 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116992577111535,
+ 'bvid': 'BV1HH3c6TE4n',
+ 'mid': 1166997747,
+ 'trace_id': 'f5d04a03-64d7-4d62-a196-715128c4b2e0',
+ 'url': 'https://www.bilibili.com/BV1HH3c6TE4n?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,750 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第61个url入队，url:https://www.bilibili.com/BV1HH3c6TE4n?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,754 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116992577243593,
+ 'bvid': 'BV1wH3c6MENZ',
+ 'mid': 1166997747,
+ 'trace_id': 'f8e1bf54-d2df-4013-a505-27b93f363552',
+ 'url': 'https://www.bilibili.com/BV1wH3c6MENZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,758 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第62个url入队，url:https://www.bilibili.com/BV1wH3c6MENZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,762 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116992577113056,
+ 'bvid': 'BV1HH3c6TE7B',
+ 'mid': 1166997747,
+ 'trace_id': '98e913f0-5ba8-4bb0-ac75-4804b1277876',
+ 'url': 'https://www.bilibili.com/BV1HH3c6TE7B?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,766 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第63个url入队，url:https://www.bilibili.com/BV1HH3c6TE7B?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,769 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116992577111734,
+ 'bvid': 'BV1HH3c6TEay',
+ 'mid': 1166997747,
+ 'trace_id': 'e4c11e40-64b9-458b-a4d9-05639d1ee6f9',
+ 'url': 'https://www.bilibili.com/BV1HH3c6TEay?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,773 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第64个url入队，url:https://www.bilibili.com/BV1HH3c6TEay?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,777 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116986990299075,
+ 'bvid': 'BV1ZRgX6rEvn',
+ 'mid': 1166997747,
+ 'trace_id': '7d2bf670-71ac-4c37-841e-9716e7151a9c',
+ 'url': 'https://www.bilibili.com/BV1ZRgX6rEvn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,780 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第65个url入队，url:https://www.bilibili.com/BV1ZRgX6rEvn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,784 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116980128417522,
+ 'bvid': 'BV1rc336hEwR',
+ 'mid': 1166997747,
+ 'trace_id': '9dce95a1-f872-4645-b35d-1bce09da8dee',
+ 'url': 'https://www.bilibili.com/BV1rc336hEwR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,788 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第66个url入队，url:https://www.bilibili.com/BV1rc336hEwR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,792 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116963368045113,
+ 'bvid': 'BV1AKgC6sEaj',
+ 'mid': 1166997747,
+ 'trace_id': '48f4e9d8-e725-4a04-927b-f611dc8bfd5b',
+ 'url': 'https://www.bilibili.com/BV1AKgC6sEaj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,796 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第67个url入队，url:https://www.bilibili.com/BV1AKgC6sEaj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,800 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116963367979867,
+ 'bvid': 'BV1CKgC6WEKP',
+ 'mid': 1166997747,
+ 'trace_id': 'aa14fe99-b66e-402a-90b8-35df31bc0708',
+ 'url': 'https://www.bilibili.com/BV1CKgC6WEKP?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,804 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第68个url入队，url:https://www.bilibili.com/BV1CKgC6WEKP?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,808 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116963367979844,
+ 'bvid': 'BV1CKgC6WEKi',
+ 'mid': 1166997747,
+ 'trace_id': '48a9158a-7252-412b-9222-51060e5c65bc',
+ 'url': 'https://www.bilibili.com/BV1CKgC6WEKi?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,812 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第69个url入队，url:https://www.bilibili.com/BV1CKgC6WEKi?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,816 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116963368109336,
+ 'bvid': 'BV1WKgC6sEVR',
+ 'mid': 1166997747,
+ 'trace_id': '0e965dcd-3420-4e67-9d85-e016b04a7bf2',
+ 'url': 'https://www.bilibili.com/BV1WKgC6sEVR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,819 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第70个url入队，url:https://www.bilibili.com/BV1WKgC6sEVR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,823 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116963368044547,
+ 'bvid': 'BV1AKgC6sEpj',
+ 'mid': 1166997747,
+ 'trace_id': 'cad2f3eb-4e4e-41f9-b44e-d3ffb8dcbb7a',
+ 'url': 'https://www.bilibili.com/BV1AKgC6sEpj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,827 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第71个url入队，url:https://www.bilibili.com/BV1AKgC6sEpj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,831 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116963267313832,
+ 'bvid': 'BV1mogk68E2D',
+ 'mid': 1166997747,
+ 'trace_id': 'dfa36318-a995-4712-9cd5-3b63dfdff3b5',
+ 'url': 'https://www.bilibili.com/BV1mogk68E2D?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,834 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第72个url入队，url:https://www.bilibili.com/BV1mogk68E2D?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,838 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116957462399686,
+ 'bvid': 'BV1WgKa67Erk',
+ 'mid': 1166997747,
+ 'trace_id': '12472bf8-0fc5-4bf2-bf04-3c3c2446d8a3',
+ 'url': 'https://www.bilibili.com/BV1WgKa67Erk?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,842 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第73个url入队，url:https://www.bilibili.com/BV1WgKa67Erk?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,846 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116957462595933,
+ 'bvid': 'BV1sgKa6EEN9',
+ 'mid': 1166997747,
+ 'trace_id': 'a09be1f5-6658-4a82-bbfa-e33c1f78c301',
+ 'url': 'https://www.bilibili.com/BV1sgKa6EEN9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,849 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第74个url入队，url:https://www.bilibili.com/BV1sgKa6EEN9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,853 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116957462399054,
+ 'bvid': 'BV1WgKa67Eeo',
+ 'mid': 1166997747,
+ 'trace_id': 'd2c1af16-c558-402b-b7f0-040215abbe54',
+ 'url': 'https://www.bilibili.com/BV1WgKa67Eeo?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,857 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第75个url入队，url:https://www.bilibili.com/BV1WgKa67Eeo?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,861 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116957294626699,
+ 'bvid': 'BV1ULKb6jEZn',
+ 'mid': 1166997747,
+ 'trace_id': '6d76fc68-e971-47db-84b9-0398ee85d942',
+ 'url': 'https://www.bilibili.com/BV1ULKb6jEZn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,865 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第76个url入队，url:https://www.bilibili.com/BV1ULKb6jEZn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,869 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116951825385808,
+ 'bvid': 'BV1y7Km6ZE43',
+ 'mid': 1166997747,
+ 'trace_id': 'a29a90e3-a02c-4f52-80ac-57bfb78c438c',
+ 'url': 'https://www.bilibili.com/BV1y7Km6ZE43?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,872 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第77个url入队，url:https://www.bilibili.com/BV1y7Km6ZE43?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,876 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116951825320219,
+ 'bvid': 'BV1W7Km6ZEfg',
+ 'mid': 1166997747,
+ 'trace_id': 'bb7476ee-dfaf-43c5-be59-b1ce3c4bb77c',
+ 'url': 'https://www.bilibili.com/BV1W7Km6ZEfg?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,880 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第78个url入队，url:https://www.bilibili.com/BV1W7Km6ZEfg?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,884 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116950449586223,
+ 'bvid': 'BV1MUK16fEgZ',
+ 'mid': 1166997747,
+ 'trace_id': 'b04f6d77-73cf-44bf-86dc-cc6278cab2da',
+ 'url': 'https://www.bilibili.com/BV1MUK16fEgZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,887 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第79个url入队，url:https://www.bilibili.com/BV1MUK16fEgZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 19:33:42,891 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:136 | generate_urls | {'aid': 116950432811249,
+ 'bvid': 'BV1uyK16aE6M',
+ 'mid': 1166997747,
+ 'trace_id': '86967879-f725-40b6-8840-48c457f33cf2',
+ 'url': 'https://www.bilibili.com/BV1uyK16aE6M?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 19:33:42,895 | iZuf678qbjwziqf6763pjzZ | 195902 | MainThread | INFO | bilibili.py:146 | process_urls | 第80个url入队，url:https://www.bilibili.com/BV1uyK16aE6M?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:06:47,085 | iZuf678qbjwziqf6763pjzZ | 197851 | MainThread | INFO | bilibili.py:118 | check_api | status_code:412
+2026-11-06 20:11:43,730 | iZuf678qbjwziqf6763pjzZ | 198119 | MainThread | INFO | bilibili.py:118 | check_api | status_code:412
+2026-11-06 20:11:55,807 | iZuf678qbjwziqf6763pjzZ | 198159 | MainThread | INFO | bilibili.py:118 | check_api | status_code:200
+2026-11-06 20:12:32,747 | iZuf678qbjwziqf6763pjzZ | 198220 | MainThread | INFO | bilibili.py:118 | check_api | status_code:200
+2026-11-06 20:13:07,688 | iZuf678qbjwziqf6763pjzZ | 198278 | MainThread | INFO | bilibili.py:118 | check_api | status_code:412
+2026-11-06 20:13:43,867 | iZuf678qbjwziqf6763pjzZ | 198333 | MainThread | INFO | bilibili.py:118 | check_api | status_code:200
+2026-11-06 20:14:26,201 | iZuf678qbjwziqf6763pjzZ | 198422 | MainThread | INFO | bilibili.py:118 | check_api | status_code:200
+2026-11-06 20:14:41,909 | iZuf678qbjwziqf6763pjzZ | 198480 | MainThread | INFO | bilibili.py:119 | check_api | status_code:200
+2026-11-06 20:17:18,248 | iZuf678qbjwziqf6763pjzZ | 198642 | MainThread | INFO | bilibili.py:119 | check_api | status_code:200
+2026-11-06 20:17:28,740 | iZuf678qbjwziqf6763pjzZ | 198675 | MainThread | INFO | bilibili.py:119 | check_api | status_code:200
+2026-11-06 20:29:48,752 | iZuf678qbjwziqf6763pjzZ | 199756 | MainThread | INFO | bilibili.py:118 | check_api | status_code:200
+2026-11-06 20:30:20,069 | iZuf678qbjwziqf6763pjzZ | 199838 | MainThread | INFO | bilibili.py:118 | check_api | status_code:200
+2026-11-06 20:34:47,004 | iZuf678qbjwziqf6763pjzZ | 200395 | MainThread | INFO | bilibili.py:118 | check_api | status_code:200
+2026-11-06 20:48:56,567 | iZuf678qbjwziqf6763pjzZ | 201114 | MainThread | INFO | bilibili.py:121 | check_api | status_code:200
+2026-11-06 20:58:39,122 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117562113330096,
+ 'bvid': 'BV1yM4t6RECX',
+ 'mid': 1166997747,
+ 'trace_id': 'b05ebb3a-3ec6-4124-b2c1-85056a07994d',
+ 'url': 'https://www.bilibili.com/BV1yM4t6RECX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,127 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117556862061796,
+ 'bvid': 'BV1skxQ6dEvy',
+ 'mid': 1166997747,
+ 'trace_id': 'beff2293-16fc-4f92-957a-0af24c467a63',
+ 'url': 'https://www.bilibili.com/BV1skxQ6dEvy?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,132 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117522569366505,
+ 'bvid': 'BV176sZ6tEXs',
+ 'mid': 1166997747,
+ 'trace_id': '4304c87e-40df-4032-a156-43f635e3ccbd',
+ 'url': 'https://www.bilibili.com/BV176sZ6tEXs?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,137 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117508090629005,
+ 'bvid': 'BV17xno65EWb',
+ 'mid': 1166997747,
+ 'trace_id': '265592b0-a0b5-49eb-acdd-2cd351d5a4e4',
+ 'url': 'https://www.bilibili.com/BV17xno65EWb?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,141 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117488561948578,
+ 'bvid': 'BV1iXnx6sEoT',
+ 'mid': 1166997747,
+ 'trace_id': '3af7e653-506a-463f-9fa6-a6fe14f3fea9',
+ 'url': 'https://www.bilibili.com/BV1iXnx6sEoT?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,144 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117445863932758,
+ 'bvid': 'BV1eyJ16BEU3',
+ 'mid': 1166997747,
+ 'trace_id': 'be6374ab-2e66-4d5a-aa8c-f645fe813617',
+ 'url': 'https://www.bilibili.com/BV1eyJ16BEU3?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,149 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117415916601648,
+ 'bvid': 'BV1kDpg6tELf',
+ 'mid': 1166997747,
+ 'trace_id': '389f3845-ae0f-400d-b1a0-ead8c4ae2073',
+ 'url': 'https://www.bilibili.com/BV1kDpg6tELf?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,152 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117397730233257,
+ 'bvid': 'BV1chpu6WENn',
+ 'mid': 1166997747,
+ 'trace_id': '731ace0b-7db9-4757-8992-063f5f6cf7a9',
+ 'url': 'https://www.bilibili.com/BV1chpu6WENn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,157 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117383050037612,
+ 'bvid': 'BV1p9H761EFa',
+ 'mid': 1166997747,
+ 'trace_id': 'e4684ff3-52aa-41f9-8a13-c806ac58e9d0',
+ 'url': 'https://www.bilibili.com/BV1p9H761EFa?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,162 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117372681718272,
+ 'bvid': 'BV18zaS6rEvX',
+ 'mid': 1166997747,
+ 'trace_id': '0a7343e2-9980-4a69-9ec1-de6049a7bb3c',
+ 'url': 'https://www.bilibili.com/BV18zaS6rEvX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,168 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117363672417260,
+ 'bvid': 'BV1FmYP6YEYW',
+ 'mid': 1166997747,
+ 'trace_id': '9cd2feda-802f-41a4-8cf3-cba36a16de43',
+ 'url': 'https://www.bilibili.com/BV1FmYP6YEYW?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,176 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117352716831859,
+ 'bvid': 'BV1wran6mESj',
+ 'mid': 1166997747,
+ 'trace_id': 'ec774ba8-1764-474f-9605-00464e460b90',
+ 'url': 'https://www.bilibili.com/BV1wran6mESj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,184 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117342348576807,
+ 'bvid': 'BV1uxa86SEc5',
+ 'mid': 1166997747,
+ 'trace_id': '70c0bd49-7dfd-4ed6-81fc-80bf0666ca3f',
+ 'url': 'https://www.bilibili.com/BV1uxa86SEc5?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,188 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117335889349509,
+ 'bvid': 'BV1ethX6XErv',
+ 'mid': 1166997747,
+ 'trace_id': '274510aa-b3bc-4680-aa4b-1e618c76c0e1',
+ 'url': 'https://www.bilibili.com/BV1ethX6XErv?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,193 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117321561607530,
+ 'bvid': 'BV164hf6mEGV',
+ 'mid': 1166997747,
+ 'trace_id': 'dfbbcf61-d482-4996-bb86-98776a14d375',
+ 'url': 'https://www.bilibili.com/BV164hf6mEGV?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,197 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117314867433120,
+ 'bvid': 'BV1gehE6DEu7',
+ 'mid': 1166997747,
+ 'trace_id': '362a82f4-9875-487a-b637-cf56a7c91920',
+ 'url': 'https://www.bilibili.com/BV1gehE6DEu7?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,201 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117302754347175,
+ 'bvid': 'BV1iJeq69E9Z',
+ 'mid': 1166997747,
+ 'trace_id': 'a089cfb1-f169-4411-9a7e-80fb55bff8b1',
+ 'url': 'https://www.bilibili.com/BV1iJeq69E9Z?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,206 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117292654398055,
+ 'bvid': 'BV1YMeS6SEmj',
+ 'mid': 1166997747,
+ 'trace_id': '7ef670b8-c32a-407c-9e25-8df1bc096b54',
+ 'url': 'https://www.bilibili.com/BV1YMeS6SEmj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,210 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117291127672058,
+ 'bvid': 'BV145e16FEgH',
+ 'mid': 1166997747,
+ 'trace_id': '4bc2b6af-c38f-4a51-8275-6e41711bcb06',
+ 'url': 'https://www.bilibili.com/BV145e16FEgH?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,213 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117285155046229,
+ 'bvid': 'BV13Weg6TEkS',
+ 'mid': 1166997747,
+ 'trace_id': 'e671a89b-415c-4520-8b52-883307084e8a',
+ 'url': 'https://www.bilibili.com/BV13Weg6TEkS?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,217 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117269753564674,
+ 'bvid': 'BV1n7Yy6LEcT',
+ 'mid': 1166997747,
+ 'trace_id': 'd7b82464-cd52-40ca-984c-871213538a84',
+ 'url': 'https://www.bilibili.com/BV1n7Yy6LEcT?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,221 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117241148343992,
+ 'bvid': 'BV16tYt6YE6c',
+ 'mid': 1166997747,
+ 'trace_id': 'f0c546e1-354c-48d4-ae0a-68341d217641',
+ 'url': 'https://www.bilibili.com/BV16tYt6YE6c?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,225 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117230142557230,
+ 'bvid': 'BV1DobT6EE4V',
+ 'mid': 1166997747,
+ 'trace_id': '4e9df122-af4d-46e3-8e9c-66e1096222d3',
+ 'url': 'https://www.bilibili.com/BV1DobT6EE4V?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,229 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117216603342467,
+ 'bvid': 'BV1VYt16xE7w',
+ 'mid': 1166997747,
+ 'trace_id': 'a1997f0b-aca5-4312-aecd-913d59ba10b7',
+ 'url': 'https://www.bilibili.com/BV1VYt16xE7w?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,233 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117216603344077,
+ 'bvid': 'BV1GYt16xE81',
+ 'mid': 1166997747,
+ 'trace_id': '4bb2d46e-5251-4253-8b54-29b9a55c8186',
+ 'url': 'https://www.bilibili.com/BV1GYt16xE81?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,236 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117213415605914,
+ 'bvid': 'BV1aNt66uEbR',
+ 'mid': 1166997747,
+ 'trace_id': '01842175-213d-4a33-af98-df91f5dfd095',
+ 'url': 'https://www.bilibili.com/BV1aNt66uEbR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,240 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117207308698883,
+ 'bvid': 'BV1Qdtd6JEg9',
+ 'mid': 1166997747,
+ 'trace_id': 'a46d92d3-6ecb-4513-9d01-71e01ef854f1',
+ 'url': 'https://www.bilibili.com/BV1Qdtd6JEg9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,245 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117195463985732,
+ 'bvid': 'BV1gRtg6WEzX',
+ 'mid': 1166997747,
+ 'trace_id': '41ee70cd-a820-4770-82e0-57c665b08bf8',
+ 'url': 'https://www.bilibili.com/BV1gRtg6WEzX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,250 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117190766365987,
+ 'bvid': 'BV1geta67EFZ',
+ 'mid': 1166997747,
+ 'trace_id': '117e7841-58fa-48de-bdf4-fe1e116c9f82',
+ 'url': 'https://www.bilibili.com/BV1geta67EFZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,254 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117179357989698,
+ 'bvid': 'BV1yp416uEgc',
+ 'mid': 1166997747,
+ 'trace_id': '0f0712cb-f2d9-47f6-8c90-4c497715e079',
+ 'url': 'https://www.bilibili.com/BV1yp416uEgc?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,258 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117162513533504,
+ 'bvid': 'BV1ZH8Z6MEYy',
+ 'mid': 1166997747,
+ 'trace_id': '520ba815-aa9e-467e-9f6e-59bb3ede3dc2',
+ 'url': 'https://www.bilibili.com/BV1ZH8Z6MEYy?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,262 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117156473735257,
+ 'bvid': 'BV1Mhh56TE8s',
+ 'mid': 1166997747,
+ 'trace_id': '2c58b298-91d7-48f4-97ec-41e839c055a7',
+ 'url': 'https://www.bilibili.com/BV1Mhh56TE8s?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,267 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117149209201438,
+ 'bvid': 'BV1iW8v6BEe6',
+ 'mid': 1166997747,
+ 'trace_id': 'ef0ad25e-673d-4d92-aedd-e3238569d046',
+ 'url': 'https://www.bilibili.com/BV1iW8v6BEe6?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,271 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117132935301949,
+ 'bvid': 'BV1Df8i6YEAq',
+ 'mid': 1166997747,
+ 'trace_id': '3e0f09d8-ee16-440d-aab7-9374a8f19d7b',
+ 'url': 'https://www.bilibili.com/BV1Df8i6YEAq?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,275 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117122617445137,
+ 'bvid': 'BV1v78J6tEfS',
+ 'mid': 1166997747,
+ 'trace_id': '186bf5fe-e0c8-49bf-9281-51dac4417a3a',
+ 'url': 'https://www.bilibili.com/BV1v78J6tEfS?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,278 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117116963392442,
+ 'bvid': 'BV1qz836gEyA',
+ 'mid': 1166997747,
+ 'trace_id': '1d23494f-27e7-44d7-b520-8889493db9bf',
+ 'url': 'https://www.bilibili.com/BV1qz836gEyA?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,281 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117116963392421,
+ 'bvid': 'BV1qz836gEyY',
+ 'mid': 1166997747,
+ 'trace_id': 'fa7df9f0-aaeb-4190-954b-4d0a5d61be7f',
+ 'url': 'https://www.bilibili.com/BV1qz836gEyY?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,284 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117110856485910,
+ 'bvid': 'BV17ube6KEUi',
+ 'mid': 1166997747,
+ 'trace_id': '1902bfe4-d970-4811-bf62-f4f085b48b79',
+ 'url': 'https://www.bilibili.com/BV17ube6KEUi?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,288 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117104195931828,
+ 'bvid': 'BV1sxbD6bE4t',
+ 'mid': 1166997747,
+ 'trace_id': 'e431e866-9e39-40df-8113-5e1ec23cca99',
+ 'url': 'https://www.bilibili.com/BV1sxbD6bE4t?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:39,291 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117097367604221,
+ 'bvid': 'BV1e4g36SE3P',
+ 'mid': 1166997747,
+ 'trace_id': 'e6e5904b-d1bf-4831-9c67-06c68ed29314',
+ 'url': 'https://www.bilibili.com/BV1e4g36SE3P?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,008 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117093978670651,
+ 'bvid': 'BV1s7gK6HEcm',
+ 'mid': 1166997747,
+ 'trace_id': '457cd50b-cfb4-450a-a196-50020c28939e',
+ 'url': 'https://www.bilibili.com/BV1s7gK6HEcm?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,013 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117077587331068,
+ 'bvid': 'BV1N3ur6JE7D',
+ 'mid': 1166997747,
+ 'trace_id': '4378e7cf-565f-4c63-ac1a-027d76fc19fb',
+ 'url': 'https://www.bilibili.com/BV1N3ur6JE7D?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,017 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117064249379511,
+ 'bvid': 'BV1Suu16KEMb',
+ 'mid': 1166997747,
+ 'trace_id': 'ea0a1605-63ac-4d86-a37d-a2b3430d917f',
+ 'url': 'https://www.bilibili.com/BV1Suu16KEMb?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,021 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117059384116795,
+ 'bvid': 'BV1XWuG6mExC',
+ 'mid': 1166997747,
+ 'trace_id': '517ed7a3-3f03-45d3-917c-d19e3d6ce7c3',
+ 'url': 'https://www.bilibili.com/BV1XWuG6mExC?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,024 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117052958312360,
+ 'bvid': 'BV1nBub6GEtH',
+ 'mid': 1166997747,
+ 'trace_id': 'ca01c276-9121-44b9-9a14-87df15a3988d',
+ 'url': 'https://www.bilibili.com/BV1nBub6GEtH?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,027 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117037909148137,
+ 'bvid': 'BV1ArMB6MEdC',
+ 'mid': 1166997747,
+ 'trace_id': 'f97c3c8c-0ce7-470e-a840-3b6c4c31f6ca',
+ 'url': 'https://www.bilibili.com/BV1ArMB6MEdC?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,031 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117031198263625,
+ 'bvid': 'BV1hgMX6REuM',
+ 'mid': 1166997747,
+ 'trace_id': '9b5ba427-96b8-4a70-85c2-6ea99473af5d',
+ 'url': 'https://www.bilibili.com/BV1hgMX6REuM?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,034 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117026366491090,
+ 'bvid': 'BV1Q63d6kEt3',
+ 'mid': 1166997747,
+ 'trace_id': 'bc77fa45-74e6-472a-bea8-8a28b6badea9',
+ 'url': 'https://www.bilibili.com/BV1Q63d6kEt3?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,037 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117023094933885,
+ 'bvid': 'BV1Ly3D6vETn',
+ 'mid': 1166997747,
+ 'trace_id': 'e6a58c44-1224-4182-9a2e-6dfc0a084f09',
+ 'url': 'https://www.bilibili.com/BV1Ly3D6vETn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,040 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117015612230605,
+ 'bvid': 'BV11hGK6bEBP',
+ 'mid': 1166997747,
+ 'trace_id': '3bc7c7ab-0977-4703-b342-1c8cc6141c9c',
+ 'url': 'https://www.bilibili.com/BV11hGK6bEBP?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,043 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117012676283039,
+ 'bvid': 'BV1rgGc6BEuE',
+ 'mid': 1166997747,
+ 'trace_id': 'f4e069e5-1152-4a55-9a29-5bdec76ece1a',
+ 'url': 'https://www.bilibili.com/BV1rgGc6BEuE?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,047 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117012676282254,
+ 'bvid': 'BV1rgGc6BEa6',
+ 'mid': 1166997747,
+ 'trace_id': '6df003e5-3267-4587-a3f3-e40f7890cd23',
+ 'url': 'https://www.bilibili.com/BV1rgGc6BEa6?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,050 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117009304062541,
+ 'bvid': 'BV1xC3b6dEYw',
+ 'mid': 1166997747,
+ 'trace_id': '751f5fe7-44ea-4b14-85df-edc42a59f1a3',
+ 'url': 'https://www.bilibili.com/BV1xC3b6dEYw?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,053 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117007072626287,
+ 'bvid': 'BV1XP3x6REPZ',
+ 'mid': 1166997747,
+ 'trace_id': '00f58a88-ec78-4436-9171-7bb850a3b99b',
+ 'url': 'https://www.bilibili.com/BV1XP3x6REPZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,056 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117003935288019,
+ 'bvid': 'BV1AY3n6hEDE',
+ 'mid': 1166997747,
+ 'trace_id': 'ad3c028a-dd5e-43fc-babe-1acf09fa0f7b',
+ 'url': 'https://www.bilibili.com/BV1AY3n6hEDE?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,059 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 117002140255763,
+ 'bvid': 'BV19R3C6yEyQ',
+ 'mid': 1166997747,
+ 'trace_id': '959e3859-1363-43e4-b695-f8a934fd8853',
+ 'url': 'https://www.bilibili.com/BV19R3C6yEyQ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,062 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116998147145847,
+ 'bvid': 'BV1763z6BEuK',
+ 'mid': 1166997747,
+ 'trace_id': '9693e77d-268e-4303-a8bf-587f4a90dc10',
+ 'url': 'https://www.bilibili.com/BV1763z6BEuK?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,065 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116998147147619,
+ 'bvid': 'BV1763z6BEP9',
+ 'mid': 1166997747,
+ 'trace_id': 'b5c4d08a-b227-46ca-b45a-bf6bd41384f6',
+ 'url': 'https://www.bilibili.com/BV1763z6BEP9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,069 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116997157356953,
+ 'bvid': 'BV1xc3B6jEAY',
+ 'mid': 1166997747,
+ 'trace_id': 'ca8ede43-f9b6-43d3-ade5-3557822b4801',
+ 'url': 'https://www.bilibili.com/BV1xc3B6jEAY?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,072 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116997157358258,
+ 'bvid': 'BV1sc3B6jESf',
+ 'mid': 1166997747,
+ 'trace_id': 'd2d1019e-bbe9-4c07-8a09-30522a4291d0',
+ 'url': 'https://www.bilibili.com/BV1sc3B6jESf?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,075 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116992577111535,
+ 'bvid': 'BV1HH3c6TE4n',
+ 'mid': 1166997747,
+ 'trace_id': 'e7b96c6c-e7d9-49fb-a3d9-d97bec1a7def',
+ 'url': 'https://www.bilibili.com/BV1HH3c6TE4n?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,078 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116992577243593,
+ 'bvid': 'BV1wH3c6MENZ',
+ 'mid': 1166997747,
+ 'trace_id': '1b40c151-1e6e-4dc4-a8f8-704391f6add7',
+ 'url': 'https://www.bilibili.com/BV1wH3c6MENZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,082 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116992577113056,
+ 'bvid': 'BV1HH3c6TE7B',
+ 'mid': 1166997747,
+ 'trace_id': '0ceef555-ef88-4403-8f1f-4491c2f72693',
+ 'url': 'https://www.bilibili.com/BV1HH3c6TE7B?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,085 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116992577111734,
+ 'bvid': 'BV1HH3c6TEay',
+ 'mid': 1166997747,
+ 'trace_id': '1cb12723-de4f-4db9-bd1d-e466a825742e',
+ 'url': 'https://www.bilibili.com/BV1HH3c6TEay?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,088 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116986990299075,
+ 'bvid': 'BV1ZRgX6rEvn',
+ 'mid': 1166997747,
+ 'trace_id': 'f4ce65e4-34a2-4c74-ba6b-a723fe9f901c',
+ 'url': 'https://www.bilibili.com/BV1ZRgX6rEvn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,091 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116980128417522,
+ 'bvid': 'BV1rc336hEwR',
+ 'mid': 1166997747,
+ 'trace_id': '065a88c1-93a5-40e1-8baa-d4727bb4a4ad',
+ 'url': 'https://www.bilibili.com/BV1rc336hEwR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,094 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116963368045113,
+ 'bvid': 'BV1AKgC6sEaj',
+ 'mid': 1166997747,
+ 'trace_id': '2d7f9d3f-67b7-4f77-8d8d-022d99416b5b',
+ 'url': 'https://www.bilibili.com/BV1AKgC6sEaj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,098 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116963367979867,
+ 'bvid': 'BV1CKgC6WEKP',
+ 'mid': 1166997747,
+ 'trace_id': '8d99b6b3-def5-4d33-9c18-793e5affb4d1',
+ 'url': 'https://www.bilibili.com/BV1CKgC6WEKP?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,101 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116963367979844,
+ 'bvid': 'BV1CKgC6WEKi',
+ 'mid': 1166997747,
+ 'trace_id': 'c756a29a-abb6-42b8-be2f-8e36d2eac75e',
+ 'url': 'https://www.bilibili.com/BV1CKgC6WEKi?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,105 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116963368109336,
+ 'bvid': 'BV1WKgC6sEVR',
+ 'mid': 1166997747,
+ 'trace_id': '71384f33-35f6-4d72-9939-1288365e20c2',
+ 'url': 'https://www.bilibili.com/BV1WKgC6sEVR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,108 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116963368044547,
+ 'bvid': 'BV1AKgC6sEpj',
+ 'mid': 1166997747,
+ 'trace_id': 'f5b2636a-a29e-4b31-9021-626b44a6fd43',
+ 'url': 'https://www.bilibili.com/BV1AKgC6sEpj?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,111 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116963267313832,
+ 'bvid': 'BV1mogk68E2D',
+ 'mid': 1166997747,
+ 'trace_id': '0b7ed9c4-2de5-4d27-88ff-a76985f824a2',
+ 'url': 'https://www.bilibili.com/BV1mogk68E2D?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,114 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116957462399686,
+ 'bvid': 'BV1WgKa67Erk',
+ 'mid': 1166997747,
+ 'trace_id': '087e78ad-55f4-4105-9491-79c1a48bea77',
+ 'url': 'https://www.bilibili.com/BV1WgKa67Erk?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,117 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116957462595933,
+ 'bvid': 'BV1sgKa6EEN9',
+ 'mid': 1166997747,
+ 'trace_id': '9083a8ba-ef8b-411c-9ba5-d67711d18f56',
+ 'url': 'https://www.bilibili.com/BV1sgKa6EEN9?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,121 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116957462399054,
+ 'bvid': 'BV1WgKa67Eeo',
+ 'mid': 1166997747,
+ 'trace_id': '0a9a8d69-700b-49d4-93b9-2f14f9f942b2',
+ 'url': 'https://www.bilibili.com/BV1WgKa67Eeo?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,124 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116957294626699,
+ 'bvid': 'BV1ULKb6jEZn',
+ 'mid': 1166997747,
+ 'trace_id': '60528719-dac9-429a-8b50-e93afeee1c41',
+ 'url': 'https://www.bilibili.com/BV1ULKb6jEZn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,127 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116951825385808,
+ 'bvid': 'BV1y7Km6ZE43',
+ 'mid': 1166997747,
+ 'trace_id': 'e0967775-bf98-44c9-baf4-3298f36ac341',
+ 'url': 'https://www.bilibili.com/BV1y7Km6ZE43?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,130 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116951825320219,
+ 'bvid': 'BV1W7Km6ZEfg',
+ 'mid': 1166997747,
+ 'trace_id': 'b84ea26c-e77d-4473-b06e-06a5f3c86a5a',
+ 'url': 'https://www.bilibili.com/BV1W7Km6ZEfg?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,134 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116950449586223,
+ 'bvid': 'BV1MUK16fEgZ',
+ 'mid': 1166997747,
+ 'trace_id': '907cccd6-bcc8-4dcb-b0b0-d3740a1ff0c2',
+ 'url': 'https://www.bilibili.com/BV1MUK16fEgZ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:46,137 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116950432811249,
+ 'bvid': 'BV1uyK16aE6M',
+ 'mid': 1166997747,
+ 'trace_id': '981e0f84-26cb-468a-bcee-cda1df3eaf33',
+ 'url': 'https://www.bilibili.com/BV1uyK16aE6M?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,221 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116950432811998,
+ 'bvid': 'BV1uyK16aEXy',
+ 'mid': 1166997747,
+ 'trace_id': '07f6a5e9-9fce-4918-b92d-ecd54d36d5b8',
+ 'url': 'https://www.bilibili.com/BV1uyK16aEXy?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,225 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第81个url入队，url:https://www.bilibili.com/BV1uyK16aEXy?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,229 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116950449522714,
+ 'bvid': 'BV1mUK16ZEPD',
+ 'mid': 1166997747,
+ 'trace_id': '67ff4217-3edd-46f8-a67b-e2184ed3b059',
+ 'url': 'https://www.bilibili.com/BV1mUK16ZEPD?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,233 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第82个url入队，url:https://www.bilibili.com/BV1mUK16ZEPD?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,239 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116950449521921,
+ 'bvid': 'BV1mUK16ZEtn',
+ 'mid': 1166997747,
+ 'trace_id': '2a4614db-f5b4-42b5-b200-f4389dec8ff0',
+ 'url': 'https://www.bilibili.com/BV1mUK16ZEtn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,243 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第83个url入队，url:https://www.bilibili.com/BV1mUK16ZEtn?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,247 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116941943474035,
+ 'bvid': 'BV16DKN6NED4',
+ 'mid': 1166997747,
+ 'trace_id': 'f4ea73c5-d8ce-4228-801d-a693604475af',
+ 'url': 'https://www.bilibili.com/BV16DKN6NED4?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,252 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第84个url入队，url:https://www.bilibili.com/BV16DKN6NED4?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,257 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116941792545294,
+ 'bvid': 'BV1NzKN6CEf6',
+ 'mid': 1166997747,
+ 'trace_id': '95732aa0-bad9-47f5-87ff-d848e2a5782d',
+ 'url': 'https://www.bilibili.com/BV1NzKN6CEf6?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,262 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第85个url入队，url:https://www.bilibili.com/BV1NzKN6CEf6?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,268 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116941775702061,
+ 'bvid': 'BV1mvKN6LEh4',
+ 'mid': 1166997747,
+ 'trace_id': '5fb9add6-a7cd-4310-a474-d1385e4cf52e',
+ 'url': 'https://www.bilibili.com/BV1mvKN6LEh4?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,275 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第86个url入队，url:https://www.bilibili.com/BV1mvKN6LEh4?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,281 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116941758924998,
+ 'bvid': 'BV12iKN6yEyA',
+ 'mid': 1166997747,
+ 'trace_id': '01299a26-e665-4221-8659-425a471076f3',
+ 'url': 'https://www.bilibili.com/BV12iKN6yEyA?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,287 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第87个url入队，url:https://www.bilibili.com/BV12iKN6yEyA?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,291 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116935048037986,
+ 'bvid': 'BV1nGNd6gEaJ',
+ 'mid': 1166997747,
+ 'trace_id': '7cacd8e0-4d7a-4ce9-a426-bb07cc1ef1ba',
+ 'url': 'https://www.bilibili.com/BV1nGNd6gEaJ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,295 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第88个url入队，url:https://www.bilibili.com/BV1nGNd6gEaJ?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,298 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116935048038206,
+ 'bvid': 'BV1nGNd6gEq8',
+ 'mid': 1166997747,
+ 'trace_id': '589dcb17-760e-45b6-afb8-e8b4e120b170',
+ 'url': 'https://www.bilibili.com/BV1nGNd6gEq8?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,303 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第89个url入队，url:https://www.bilibili.com/BV1nGNd6gEq8?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,309 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116935048235344,
+ 'bvid': 'BV1nGNd63EvL',
+ 'mid': 1166997747,
+ 'trace_id': '4cbbc082-6d73-4e30-994b-327277e46324',
+ 'url': 'https://www.bilibili.com/BV1nGNd63EvL?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,315 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第90个url入队，url:https://www.bilibili.com/BV1nGNd63EvL?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,321 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116933487954593,
+ 'bvid': 'BV1BEKE6vEsz',
+ 'mid': 1166997747,
+ 'trace_id': '015e177c-0c13-4f84-85f5-e53d09889689',
+ 'url': 'https://www.bilibili.com/BV1BEKE6vEsz?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,326 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第91个url入队，url:https://www.bilibili.com/BV1BEKE6vEsz?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,330 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116933487757202,
+ 'bvid': 'BV1BEKE6eEnN',
+ 'mid': 1166997747,
+ 'trace_id': '36cebabb-2dd1-467d-945f-604179e17d31',
+ 'url': 'https://www.bilibili.com/BV1BEKE6eEnN?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,333 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第92个url入队，url:https://www.bilibili.com/BV1BEKE6eEnN?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,337 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116933487758769,
+ 'bvid': 'BV1qEKE6eEvh',
+ 'mid': 1166997747,
+ 'trace_id': '6affea8b-b76d-4e2d-8618-ce743f166589',
+ 'url': 'https://www.bilibili.com/BV1qEKE6eEvh?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,341 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第93个url入队，url:https://www.bilibili.com/BV1qEKE6eEvh?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,345 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116933487822719,
+ 'bvid': 'BV1ZEKE6eEDv',
+ 'mid': 1166997747,
+ 'trace_id': '665f5ce1-efa7-40b0-9041-31101de8bfd8',
+ 'url': 'https://www.bilibili.com/BV1ZEKE6eEDv?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,349 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第94个url入队，url:https://www.bilibili.com/BV1ZEKE6eEDv?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,355 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116932581788326,
+ 'bvid': 'BV1WCKj6zE8a',
+ 'mid': 1166997747,
+ 'trace_id': '4aa62d2e-519e-4471-a438-c744825427f2',
+ 'url': 'https://www.bilibili.com/BV1WCKj6zE8a?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,360 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第95个url入队，url:https://www.bilibili.com/BV1WCKj6zE8a?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,364 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116929310297503,
+ 'bvid': 'BV1cFKG6WE4q',
+ 'mid': 1166997747,
+ 'trace_id': 'f2e2f4e3-6c17-406b-bebc-22719b6202fa',
+ 'url': 'https://www.bilibili.com/BV1cFKG6WE4q?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,369 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第96个url入队，url:https://www.bilibili.com/BV1cFKG6WE4q?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,372 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116929142589422,
+ 'bvid': 'BV1byK36eEQf',
+ 'mid': 1166997747,
+ 'trace_id': 'e0fdf9c7-0331-49ae-aaa9-905e984591c5',
+ 'url': 'https://www.bilibili.com/BV1byK36eEQf?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,378 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第97个url入队，url:https://www.bilibili.com/BV1byK36eEQf?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,382 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116929142654942,
+ 'bvid': 'BV1SyK36eEnN',
+ 'mid': 1166997747,
+ 'trace_id': 'bdbc23e6-cf46-474a-a726-55693986033c',
+ 'url': 'https://www.bilibili.com/BV1SyK36eEnN?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,387 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第98个url入队，url:https://www.bilibili.com/BV1SyK36eEnN?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,390 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116929142459080,
+ 'bvid': 'BV1UyK36YEht',
+ 'mid': 1166997747,
+ 'trace_id': 'fcb2697f-4b67-4b28-b420-7069e18067f5',
+ 'url': 'https://www.bilibili.com/BV1UyK36YEht?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,394 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第99个url入队，url:https://www.bilibili.com/BV1UyK36YEht?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,400 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116918992242560,
+ 'bvid': 'BV1VrN86sEJx',
+ 'mid': 1166997747,
+ 'trace_id': '0a01cdf3-51bc-43d3-a84e-c0dc57670e5a',
+ 'url': 'https://www.bilibili.com/BV1VrN86sEJx?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,404 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第100个url入队，url:https://www.bilibili.com/BV1VrN86sEJx?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,407 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116918790915224,
+ 'bvid': 'BV1PFNh6GEtR',
+ 'mid': 1166997747,
+ 'trace_id': '76e71af1-afb6-4aeb-b135-71c21dcc3abd',
+ 'url': 'https://www.bilibili.com/BV1PFNh6GEtR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,410 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第101个url入队，url:https://www.bilibili.com/BV1PFNh6GEtR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,413 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116912382020257,
+ 'bvid': 'BV1ciNm6QEhg',
+ 'mid': 1166997747,
+ 'trace_id': '27aab36e-1979-48d2-9af8-1a9c3b4df382',
+ 'url': 'https://www.bilibili.com/BV1ciNm6QEhg?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,416 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第102个url入队，url:https://www.bilibili.com/BV1ciNm6QEhg?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,420 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116906828826655,
+ 'bvid': 'BV1WHNu6mEjM',
+ 'mid': 1166997747,
+ 'trace_id': 'f41229ec-89fc-435d-b2f0-2dd6033cf4f6',
+ 'url': 'https://www.bilibili.com/BV1WHNu6mEjM?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,423 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第103个url入队，url:https://www.bilibili.com/BV1WHNu6mEjM?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,426 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116899480407503,
+ 'bvid': 'BV1DFNt6yExm',
+ 'mid': 1166997747,
+ 'trace_id': '007ec646-34d4-454c-98a8-f4a24dfd9dfb',
+ 'url': 'https://www.bilibili.com/BV1DFNt6yExm?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,430 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第104个url入队，url:https://www.bilibili.com/BV1DFNt6yExm?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,433 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116899497183260,
+ 'bvid': 'BV1QfN46LEx2',
+ 'mid': 1166997747,
+ 'trace_id': '2b4462d9-f824-413f-8dac-18de3f95f4cd',
+ 'url': 'https://www.bilibili.com/BV1QfN46LEx2?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,436 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第105个url入队，url:https://www.bilibili.com/BV1QfN46LEx2?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,439 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116899480339092,
+ 'bvid': 'BV1hFNt6yEZL',
+ 'mid': 1166997747,
+ 'trace_id': '22ecc220-63f6-427f-89d4-22904e55f9cd',
+ 'url': 'https://www.bilibili.com/BV1hFNt6yEZL?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,442 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第106个url入队，url:https://www.bilibili.com/BV1hFNt6yEZL?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,446 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116899480471894,
+ 'bvid': 'BV13FNt61ELt',
+ 'mid': 1166997747,
+ 'trace_id': 'd649c619-f0e7-4b13-b658-d6982aae6dc9',
+ 'url': 'https://www.bilibili.com/BV13FNt61ELt?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,450 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第107个url入队，url:https://www.bilibili.com/BV13FNt61ELt?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,453 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116897936837095,
+ 'bvid': 'BV1YUNp6iEAz',
+ 'mid': 1166997747,
+ 'trace_id': '7ccf5b8d-8a2d-42d0-a499-394acd6e8e9a',
+ 'url': 'https://www.bilibili.com/BV1YUNp6iEAz?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,456 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第108个url入队，url:https://www.bilibili.com/BV1YUNp6iEAz?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,459 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116878995359551,
+ 'bvid': 'BV1VMMa6iErr',
+ 'mid': 1166997747,
+ 'trace_id': 'b7e9ad7f-6f36-4d85-a1a5-8a515ef1c302',
+ 'url': 'https://www.bilibili.com/BV1VMMa6iErr?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,462 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第109个url入队，url:https://www.bilibili.com/BV1VMMa6iErr?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,466 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116856597907613,
+ 'bvid': 'BV1grTb6WEis',
+ 'mid': 1166997747,
+ 'trace_id': 'b5b98a03-8c1e-45b1-8ee4-ef921e84a56f',
+ 'url': 'https://www.bilibili.com/BV1grTb6WEis?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,470 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第110个url入队，url:https://www.bilibili.com/BV1grTb6WEis?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,473 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116856597907857,
+ 'bvid': 'BV1grTb6WE69',
+ 'mid': 1166997747,
+ 'trace_id': '53e87ad6-a119-4275-ba65-1d140346944c',
+ 'url': 'https://www.bilibili.com/BV1grTb6WE69?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,477 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第111个url入队，url:https://www.bilibili.com/BV1grTb6WE69?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,480 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116856597776490,
+ 'bvid': 'BV18rTb6pE6W',
+ 'mid': 1166997747,
+ 'trace_id': '43b43fc6-20c6-440d-9e47-32286be7299a',
+ 'url': 'https://www.bilibili.com/BV18rTb6pE6W?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,483 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第112个url入队，url:https://www.bilibili.com/BV18rTb6pE6W?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,487 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116856279008113,
+ 'bvid': 'BV1Q9Tx62Em5',
+ 'mid': 1166997747,
+ 'trace_id': '068bebc0-9088-467e-8721-8fec41a0f854',
+ 'url': 'https://www.bilibili.com/BV1Q9Tx62Em5?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,490 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第113个url入队，url:https://www.bilibili.com/BV1Q9Tx62Em5?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,493 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116856245453944,
+ 'bvid': 'BV1fBTx6oEx2',
+ 'mid': 1166997747,
+ 'trace_id': '48f4450f-02cc-443c-9432-f8650cddd949',
+ 'url': 'https://www.bilibili.com/BV1fBTx6oEx2?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,497 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第114个url入队，url:https://www.bilibili.com/BV1fBTx6oEx2?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,500 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116839552191788,
+ 'bvid': 'BV1U9Tc66EiR',
+ 'mid': 1166997747,
+ 'trace_id': 'd3440789-9d7c-4af9-8810-2f92c281359d',
+ 'url': 'https://www.bilibili.com/BV1U9Tc66EiR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,503 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第115个url入队，url:https://www.bilibili.com/BV1U9Tc66EiR?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,507 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116839535348596,
+ 'bvid': 'BV1swTw6NEZo',
+ 'mid': 1166997747,
+ 'trace_id': '002ad4db-5b3c-4d4e-8b09-f6828f4ac358',
+ 'url': 'https://www.bilibili.com/BV1swTw6NEZo?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,510 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第116个url入队，url:https://www.bilibili.com/BV1swTw6NEZo?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,513 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116839535347265,
+ 'bvid': 'BV1xwTw6NE3S',
+ 'mid': 1166997747,
+ 'trace_id': '9105dbd4-8ba8-4e3e-80d4-a399446ae8ba',
+ 'url': 'https://www.bilibili.com/BV1xwTw6NE3S?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,516 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第117个url入队，url:https://www.bilibili.com/BV1xwTw6NE3S?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,520 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116839535348001,
+ 'bvid': 'BV1swTw6NEDs',
+ 'mid': 1166997747,
+ 'trace_id': 'f4c7dcbe-e661-416f-8fda-65b98822d746',
+ 'url': 'https://www.bilibili.com/BV1swTw6NEDs?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,523 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第118个url入队，url:https://www.bilibili.com/BV1swTw6NEDs?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,527 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116799169365251,
+ 'bvid': 'BV1Wrj26UEah',
+ 'mid': 1166997747,
+ 'trace_id': '9acedc0e-6273-42d8-a02c-c4649a2193ec',
+ 'url': 'https://www.bilibili.com/BV1Wrj26UEah?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,530 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第119个url入队，url:https://www.bilibili.com/BV1Wrj26UEah?vd_source=cd2f30c4c2b17931e5fe4b95752072ee
+2026-11-06 20:58:56,533 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:165 | generate_urls | {'aid': 116799152721509,
+ 'bvid': 'BV1ACj26EE5p',
+ 'mid': 1166997747,
+ 'trace_id': '346e7db7-e803-4abd-b25a-8dd80a031911',
+ 'url': 'https://www.bilibili.com/BV1ACj26EE5p?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}
+2026-11-06 20:58:56,537 | iZuf678qbjwziqf6763pjzZ | 201812 | MainThread | INFO | bilibili.py:176 | process_urls | 第120个url入队，url:https://www.bilibili.com/BV1ACj26EE5p?vd_source=cd2f30c4c2b17931e5fe4b95752072ee

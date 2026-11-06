@@ -1,68 +1,24 @@
+from enum import Enum
+import math
 from pathlib import Path
 import random
-import threading
 import requests
-import logging
-from logging.handlers import RotatingFileHandler
 import json
 from pprint import pprint
 import sys
-import os
 import time
 import re
 import hashlib
 from urllib.parse import quote
-from lxml import etree
 from pprint import pformat
-import mysql.connector
-import redis
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import os
-import socket
 import uuid
-from dotenv import load_dotenv
 sys.path.append(str(Path(__file__).parent.parent.parent.resolve()))
 from src.client import build_db, build_redis
+from src.utils import *
+from src.config import *
 
-load_dotenv()
-
-SRC_DIR = next((dir / "src" for dir in Path(__file__).resolve().parents if dir.joinpath('requirements.txt').exists()), None)
-
-def setup_logger(task_name: str = "bilibili"):
-    log_dir = SRC_DIR / "log" / task_name
-    log_dir.mkdir(parents=True, exist_ok=True)
-    log_path = log_dir.joinpath('run.log')
-    logger = logging.getLogger(task_name)
-    logger.setLevel(logging.INFO)
-    logger.propagate = False
-    if logger.handlers:
-        return logger
-    formatter = logging.Formatter(
-        fmt=
-        "%(asctime)s | "
-        "%(hostname)s | "
-        "%(process)d | "
-        "%(threadName)s | "
-        "%(levelname)s | "
-        "%(filename)s:%(lineno)d | "
-        "%(funcName)s | "
-        "%(message)s",
-        defaults={"hostname": f'{socket.gethostname()}'},
-    )
-    file_handler = RotatingFileHandler(
-        filename=log_path,
-        maxBytes=10 * 1024 * 1024,
-        backupCount=3,
-        encoding='utf-8'
-    )
-    console_handler = logging.StreamHandler()
-    file_handler.setFormatter(formatter)
-    console_handler.setFormatter(formatter)
-    logger.addHandler(file_handler)
-    logger.addHandler(console_handler)
-    return logger
-
-log = setup_logger()
+log = setup_logger(task_name="bilibili")
 
 class BiliBiliSpider():
     session = requests.Session()
@@ -86,6 +42,7 @@ class BiliBiliSpider():
 
     }
 
+    SRC_DIR = next((dir / "src" for dir in Path(__file__).resolve().parents if dir.joinpath('requirements.txt').exists()), None)
     save_dir = SRC_DIR / "download"
     save_dir.mkdir(parents=True, exist_ok=True)
 
@@ -93,7 +50,7 @@ class BiliBiliSpider():
         self.url = url
         # self.conn = build_db()
         self.r = build_redis()
-        
+
     def get_wbi_key(self):
         response = self.session.get(url='https://api.bilibili.com/x/web-interface/nav')
         # pprint(response.json())
@@ -127,7 +84,6 @@ class BiliBiliSpider():
                 key = quote(str(p), safe="~()*!.'-")
                 value = quote(v, safe="~()*!.'-")
                 l.append(f"{key}={value}")
-
         u = "&".join(l)
         # print(u)
         w_rid = hashlib.md5((u + i).encode('utf-8')).hexdigest()
@@ -136,6 +92,35 @@ class BiliBiliSpider():
         params['w_rid'] = w_rid
         params['wts'] = wts
         return params
+
+
+    def check_api(self):
+        params = {
+            "pn": 1,
+            "ps": 40,
+            "tid": 0,
+            "special_type": "",
+            "order": "pubdate",
+            "mid": 1166997747,
+            "index": 0,
+            "keyword": "",
+            "order_avoided": "true",
+            "platform": "web",
+            "space_login_group": 1,
+            "web_location": "333.1387",
+            "x-bili-locale-json": "{\"c_locale\":{\"language\":\"zh\",\"script\":\"Hans\"},\"always_translate\":false}",
+            "x-bili-device-req-json": "{\"platform\":\"web\",\"device\":\"pc\",\"spmid\":\"333.1387\",\"mobi_app\":\"web_cn\"}",
+            "dm_img_list": "[{\"x\":876,\"y\":1053,\"z\":0,\"timestamp\":2848,\"k\":116,\"type\":0},{\"x\":903,\"y\":1073,\"z\":25,\"timestamp\":4498,\"k\":112,\"type\":0},{\"x\":1008,\"y\":1178,\"z\":130,\"timestamp\":4758,\"k\":70,\"type\":1},{\"x\":2881,\"y\":-1886,\"z\":162,\"timestamp\":275282,\"k\":94,\"type\":0},{\"x\":3247,\"y\":-946,\"z\":416,\"timestamp\":275382,\"k\":126,\"type\":0},{\"x\":2737,\"y\":87,\"z\":337,\"timestamp\":276519,\"k\":64,\"type\":0},{\"x\":2665,\"y\":-448,\"z\":251,\"timestamp\":276620,\"k\":60,\"type\":0},{\"x\":2697,\"y\":-440,\"z\":286,\"timestamp\":276721,\"k\":83,\"type\":0},{\"x\":3074,\"y\":-70,\"z\":684,\"timestamp\":276830,\"k\":63,\"type\":0},{\"x\":3400,\"y\":242,\"z\":1006,\"timestamp\":276976,\"k\":83,\"type\":0},{\"x\":3075,\"y\":-161,\"z\":662,\"timestamp\":277079,\"k\":67,\"type\":0},{\"x\":2880,\"y\":-352,\"z\":478,\"timestamp\":277182,\"k\":106,\"type\":0},{\"x\":2569,\"y\":-774,\"z\":178,\"timestamp\":277286,\"k\":80,\"type\":0},{\"x\":3634,\"y\":289,\"z\":1249,\"timestamp\":277391,\"k\":73,\"type\":0},{\"x\":2480,\"y\":-1210,\"z\":164,\"timestamp\":277496,\"k\":109,\"type\":0},{\"x\":3261,\"y\":-810,\"z\":1030,\"timestamp\":277599,\"k\":82,\"type\":0},{\"x\":3339,\"y\":-813,\"z\":1098,\"timestamp\":277703,\"k\":64,\"type\":0},{\"x\":4129,\"y\":-65,\"z\":1876,\"timestamp\":277812,\"k\":78,\"type\":0},{\"x\":2370,\"y\":-1824,\"z\":117,\"timestamp\":745267,\"k\":101,\"type\":1},{\"x\":1940,\"y\":2138,\"z\":1070,\"timestamp\":745515,\"k\":77,\"type\":0},{\"x\":3854,\"y\":2941,\"z\":2269,\"timestamp\":745619,\"k\":75,\"type\":0},{\"x\":2837,\"y\":1423,\"z\":1076,\"timestamp\":745732,\"k\":67,\"type\":0},{\"x\":2655,\"y\":1241,\"z\":894,\"timestamp\":745864,\"k\":78,\"type\":0},{\"x\":2392,\"y\":697,\"z\":531,\"timestamp\":745967,\"k\":85,\"type\":0},{\"x\":3328,\"y\":1352,\"z\":1436,\"timestamp\":746068,\"k\":77,\"type\":0},{\"x\":3951,\"y\":1368,\"z\":2017,\"timestamp\":746172,\"k\":64,\"type\":0},{\"x\":2327,\"y\":-442,\"z\":376,\"timestamp\":746276,\"k\":79,\"type\":0},{\"x\":2281,\"y\":-682,\"z\":314,\"timestamp\":746376,\"k\":81,\"type\":0},{\"x\":4763,\"y\":1807,\"z\":2752,\"timestamp\":746481,\"k\":75,\"type\":0},{\"x\":5428,\"y\":2012,\"z\":3302,\"timestamp\":746584,\"k\":108,\"type\":0},{\"x\":5635,\"y\":1688,\"z\":3400,\"timestamp\":746685,\"k\":125,\"type\":0},{\"x\":4512,\"y\":391,\"z\":2224,\"timestamp\":746789,\"k\":61,\"type\":0},{\"x\":5679,\"y\":1422,\"z\":3339,\"timestamp\":746896,\"k\":101,\"type\":0},{\"x\":3517,\"y\":-736,\"z\":1165,\"timestamp\":747009,\"k\":122,\"type\":0}]",
+            "dm_img_str": "V2ViR0wgMS4wIChPcGVuR0wgRVMgMi4wIENocm9taXVtKQ",
+            "dm_cover_img_str": "QU5HTEUgKE5WSURJQSwgTlZJRElBIEdlRm9yY2UgUlRYIDQwNzAgTGFwdG9wIEdQVSAoMHgwMDAwMjg2MCkgRGlyZWN0M0QxMSB2c181XzAgcHNfNV8wLCBEM0QxMSlHb29nbGUgSW5jLiAoTlZJRElBKQ",
+            "dm_img_inter": "{\"ds\":[{\"t\":7,\"c\":\"dnVpX2J1dHRvbiB2dWlfYnV0dG9uLS1hY3RpdmUgdnVpX2J1dHRvbi0tYWN0aXZlLWJsdWUgdnVpX2J1dHRvbi0tbm8tdHJhbnNpdGlvbiB2dWlfcGFnZW5hdGlvbi0tYnRuIHZ1aV9wYWdlbmF0aW9uLS1idG4tbn\",\"p\":[5391,25,9362],\"s\":[160,330,320]}],\"wh\":[2686,1327,66],\"of\":[5477,7316,20]}"
+        }
+        params = self.get_wid(params=params)
+        response = self.session.get('https://api.bilibili.com/x/space/wbi/arc/search', params=params)
+        pprint(response.json())
+
+        log.info(f"status_code:{response.status_code}")
+        return response
 
     def generate_urls(self):
         params = {
@@ -158,9 +143,12 @@ class BiliBiliSpider():
             "dm_cover_img_str": "QU5HTEUgKE5WSURJQSwgTlZJRElBIEdlRm9yY2UgUlRYIDQwNzAgTGFwdG9wIEdQVSAoMHgwMDAwMjg2MCkgRGlyZWN0M0QxMSB2c181XzAgcHNfNV8wLCBEM0QxMSlHb29nbGUgSW5jLiAoTlZJRElBKQ",
             "dm_img_inter": "{\"ds\":[{\"t\":7,\"c\":\"dnVpX2J1dHRvbiB2dWlfYnV0dG9uLS1hY3RpdmUgdnVpX2J1dHRvbi0tYWN0aXZlLWJsdWUgdnVpX2J1dHRvbi0tbm8tdHJhbnNpdGlvbiB2dWlfcGFnZW5hdGlvbi0tYnRuIHZ1aV9wYWdlbmF0aW9uLS1idG4tbn\",\"p\":[5391,25,9362],\"s\":[160,330,320]}],\"wh\":[2686,1327,66],\"of\":[5477,7316,20]}"
         }
+        end = None
         while True:
             params = self.get_wid(params=params)
             response = self.session.get('https://api.bilibili.com/x/space/wbi/arc/search', params=params)
+            if end is None:
+                end = math.ceil(response.json()['data']['page']['count'] / 40)
             for index, item in enumerate(response.json()['data']['list']['vlist'], start=1):
                 trace_id = str(uuid.uuid4())
                 bvid = item['bvid']
@@ -177,7 +165,8 @@ class BiliBiliSpider():
                 log.info(pformat(kwargs))
                 yield kwargs
             params['pn'] += 1
-            if params['pn'] == 3:
+            time.sleep(random.uniform(TIME_DELAY_MIN, TIME_DELAY_MAX))
+            if params['pn'] > end:
                 return
                      
     def process_urls(self):
@@ -226,7 +215,7 @@ class BiliBiliSpider():
     # def storage(self):
     #     kwargs = 
     
-    def worker(self):
+    def consumer_urls(self):
         while True:
             json_tuple = self.r.brpop("bili_list", timeout=5)
             if json_tuple is None:
@@ -244,22 +233,11 @@ def run_pipline():
     s.process_urls()
     exit()
     with ThreadPoolExecutor(max_workers=1) as pool:
-        futures = [pool.submit(s.worker) for _ in range(1)]
+        futures = [pool.submit(s.consumer_urls) for _ in range(1)]
         for future in as_completed(futures):
             log.info(future.result())
     
-        
-
-    # @classmethod
-    # def run_pipline(cls, params: dict, flag: int):
-    #     instance = BiliBiliSpider('1')
-    #     if flag == 1:
-    #         instance.process_urls(params)
-    #     else:
-    #         json_tuple = instance.r.brpop("bili_list", timeout=5)
-    #         json_dict = json.loads(json_tuple[1])
-    #         pprint(json_dict)
-
+    
   
                 
 if __name__ == "__main__":
@@ -268,3 +246,4 @@ if __name__ == "__main__":
     #     time.sleep(3)
     #     print('123')
     # log.info(1)
+

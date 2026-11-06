@@ -187,7 +187,7 @@ class WeiboSpider():
                     if max_id == 0:
                         return
 
-    def consumer(self):
+    def consumer_urls(self):
         cnt = 0
         while True:
             json_tuple = self.r.brpop("wb_list", timeout=5)

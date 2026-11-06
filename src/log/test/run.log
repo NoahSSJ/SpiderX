@@ -1,0 +1,5 @@
+2026-11-06 20:11:43,730 | iZuf678qbjwziqf6763pjzZ | 198119 | MainThread | ERROR | test_http.py:20 | test_bili_api | 缺少cookie，或者cookie过期
+2026-11-06 20:11:55,808 | iZuf678qbjwziqf6763pjzZ | 198159 | MainThread | INFO | test_http.py:18 | test_bili_api | 成功
+2026-11-06 20:12:32,747 | iZuf678qbjwziqf6763pjzZ | 198220 | MainThread | INFO | test_http.py:18 | test_bili_api | 成功
+2026-11-06 20:13:07,689 | iZuf678qbjwziqf6763pjzZ | 198278 | MainThread | ERROR | test_http.py:19 | test_bili_api | 缺少cookie，或者cookie过期
+2026-11-06 20:13:43,868 | iZuf678qbjwziqf6763pjzZ | 198333 | MainThread | INFO | test_http.py:17 | test_bili_api | 成功
