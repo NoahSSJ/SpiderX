@@ -239,9 +239,6 @@ def run_pipline():
         for future in as_completed(futures):
             log.info(future.result())
     
-    
-  
-                
 if __name__ == "__main__":
     run_pipline()
     # while True:
