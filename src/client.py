@@ -1,4 +1,5 @@
 import base64
+import sqlite3
 import sys
 import redis
 import mysql.connector
@@ -7,6 +8,7 @@ from dotenv import load_dotenv
 from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.resolve()))
 from src.utils import find_env
+from src.config import DB_DIR
 
 load_dotenv(dotenv_path=find_env())
 
@@ -22,7 +24,7 @@ def build_redis():
     r.ping()
     return r
 
-def build_db():
+def build_mysql():
     conn = mysql.connector.connect(
         host=os.getenv('host'),
         port=3306,
@@ -31,17 +33,22 @@ def build_db():
         database="testdb",       
         charset="utf8mb4",    
     )
-    # sql = """
-    #     CREATE TABLE IF NOT EXISTS purchase (
-    #         id INT PRIMARY KEY AUTO_INCREMENT,
-    #         text VARCHAR(255) NOT NULL
-    #     ) DEFAULT CHARSET=utf8mb4
-    # """
-    # cur = conn.cursor()
-    # cur.execute(sql)
-    # conn.commit()
-    # cur.close()
     return conn
 
 def build_oss():
     pass
+
+def build_db():
+    db_path = DB_DIR.joinpath('cookie.db')
+    conn = sqlite3.connect(db_path)
+    sql = """
+        CREATE TABLE IF NOT EXISTS cookie(
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            jar_blob BLOB NOT NULL,
+            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+    """
+    conn.execute(sql)
+    conn.commit()
+    return conn

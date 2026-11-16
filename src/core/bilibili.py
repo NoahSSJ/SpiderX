@@ -1,5 +1,10 @@
 from enum import Enum
 import math
+import base64
+import pickle
+import io
+import sqlite3
+import qrcode
 from pathlib import Path
 import random
 import requests
@@ -14,9 +19,43 @@ from pprint import pformat
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import uuid
 sys.path.append(str(Path(__file__).parent.parent.parent.resolve()))
-from src.client import build_db, build_redis
+from src.client import build_db
 from src.utils import *
 from src.config import *
+
+def setup_logger(task_name: str = "bilibili"):
+    log_dir = ROOT_DIR / "log" 
+    log_dir.mkdir(parents=True, exist_ok=True)
+    log_path = log_dir.joinpath(f'{task_name}.log')
+    logger = logging.getLogger(task_name)
+    logger.setLevel(logging.INFO)
+    logger.propagate = False
+    if logger.handlers:
+        return logger
+    formatter = logging.Formatter(
+        fmt=
+        "%(asctime)s | "
+        "%(hostname)s | "
+        "%(process)d | "
+        "%(threadName)s | "
+        "%(levelname)s | "
+        "%(filename)s:%(lineno)d | "
+        "%(funcName)s | "
+        "%(message)s",
+        defaults={"hostname": f'{socket.gethostname()}'},
+    )
+    file_handler = RotatingFileHandler(
+        filename=log_path,
+        maxBytes=10 * 1024 * 1024,
+        backupCount=3,
+        encoding='utf-8'
+    )
+    console_handler = logging.StreamHandler()
+    file_handler.setFormatter(formatter)
+    console_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
+    return logger
 
 log = setup_logger(task_name="bilibili")
 
@@ -35,21 +74,18 @@ class BiliBiliSpider():
         'sec-fetch-mode': 'cors',
         'sec-fetch-site': 'same-site',
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0',
-        'cookie': 'buvid3=61979FAF-5F46-4CE9-8DFA-101F02B42D3C28770infoc; b_nut=1790103228; _uuid=C1B641B10-21D10-92101-5A38-1D59BFDBBCDD28491infoc; buvid_fp=3aa6c2513671b9ae8a99a7d8f42cad77; buvid4=6794B7FF-C6B9-0C32-E3EE-AA5EB5A34E1131365-026092302-/KtPZeHW9gETm7AfGjVxMQ%3D%3D; DedeUserID=688319368; DedeUserID__ckMd5=5f5dc4f07ec63413; rpdid=0zbfAGyzmN|HQ6Ng9TF|1GZ|3w1X96jl; LIVE_BUVID=AUTO1717901073244675; CURRENT_QUALITY=0; user_site=CN; default_sites=%5B%22CN%22%2C%22OVERSEAS%22%5D; bili_ticket=eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3OTM5ODE1NTMsImlhdCI6MTc5MzcyMjI5MywicGx0IjotMX0.pWVf-nfRHixlLLG8r5cS3VSEOTBxjg3ZGRLTb2qyGxk; bili_ticket_expires=1793981493; SESSDATA=b10accec%2C1809274354%2C4e82b%2Ab2CjBWL69W0Hg0I0PYJbMJPgN9qOyIUM35iY-Ui-C_kfyRS8msguRNqfFPWX9kJevR4rgSVmVIWEtpVFNBaHpxUmtkZW5SVE1sYlNNUkZsS0JLdkJEYmdvdkNMeXlpWl9GcFdKOHdVLUZRR1JxMDNnMHRGVTFXa2JpQUdLSDk5djhNclRITk9TN0xBIIEC; bili_jct=afb72e5ffcc7c55a5308b1ccc1df8c69; home_feed_column=5; browser_resolution=1530-731; sid=7z0bo2dr; bp_t_offset_688319368=1267554344945844224; CURRENT_FNVAL=2000; b_lsid=C80204B0_1A1B0F9DBCF',
+        'cookie': 'buvid3=61979FAF-5F46-4CE9-8DFA-101F02B42D3C28770infoc; b_nut=1790103228; _uuid=C1B641B10-21D10-92101-5A38-1D59BFDBBCDD28491infoc; buvid_fp=3aa6c2513671b9ae8a99a7d8f42cad77; buvid4=6794B7FF-C6B9-0C32-E3EE-AA5EB5A34E1131365-026092302-/KtPZeHW9gETm7AfGjVxMQ%3D%3D; DedeUserID=688319368; DedeUserID__ckMd5=5f5dc4f07ec63413; rpdid=0zbfAGyzmN|HQ6Ng9TF|1GZ|3w1X96jl; LIVE_BUVID=AUTO1717901073244675; user_site=CN; default_sites=%5B%22CN%22%2C%22OVERSEAS%22%5D; bili_ticket=eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3OTQ0OTczMzcsImlhdCI6MTc5NDIzODA3NywicGx0IjotMX0.RThqM9g1UTaFYBM5XIre6dfAgZ5PCHylDyMKrf_BLxo; bili_ticket_expires=1794497277; SESSDATA=da3f53db%2C1809852112%2C4c28f%2Ab2CjAeq-5oFrK4V-lSyF1wEGyRBnCAnymduo7e-fqo0DcauKz3_cmoNs3KpjvbZGnIIIwSVkhISC1pbk0yVWpxRzhmYWlfc2ZWOXZJdVZTLVFuNEJieUZuYXJpclptV3c1TG44MDQ5TGgwcEJpRkYzUDhoVm5YRzljRjVNVzRXZklXcHFfa1VBNjhnIIEC; bili_jct=cc4006b21d146873ae7df784c1c350e9; sid=8bvubwou; CURRENT_QUALITY=80; home_feed_column=5; browser_resolution=1530-731; bp_t_offset_688319368=1269783978433314816; CURRENT_FNVAL=2000; b_lsid=73A66863_1A1CFA5E531',
 
     }
     session.proxies = {
 
     }
 
-    SRC_DIR = next((dir / "src" for dir in Path(__file__).resolve().parents if dir.joinpath('requirements.txt').exists()), None)
-    save_dir = SRC_DIR / "download"
-    save_dir.mkdir(parents=True, exist_ok=True)
 
     def __init__(self, url: str):
         self.url = url
-        # self.conn = build_db()
-        self.r = build_redis()
+        self.conn = build_db()
+        # self.r = build_redis()
 
     def get_wbi_key(self):
         response = self.session.get(url='https://api.bilibili.com/x/web-interface/nav')
@@ -83,16 +119,50 @@ class BiliBiliSpider():
                 v = str(v).lower() if isinstance(v, bool) else str(v)
                 key = quote(str(p), safe="~()*!.'-")
                 value = quote(v, safe="~()*!.'-")
-                l.append(f"{key}={value}")
+                l.append(f"{key}={value}")      
+                
         u = "&".join(l)
-        # print(u)
         w_rid = hashlib.md5((u + i).encode('utf-8')).hexdigest()
-        # print(w_rid)
         wts = str(r)
         params['w_rid'] = w_rid
         params['wts'] = wts
         return params
 
+    def login(self):
+        response = self.session.get(url='https://passport.bilibili.com/x/passport-login/web/qrcode/generate?source=main-fe-header&go_url=https:%2F%2Fwww.bilibili.com%2F&web_location=333.1007&x-bili-locale-json=%7B%22c_locale%22:%7B%22language%22:%22zh%22,%22script%22:%22Hans%22%7D,%22always_translate%22:true%7D&x-bili-redirect=1&x-bili-device-req-json=%7B%22platform%22:%22web%22,%22device%22:%22pc%22,%22spmid%22:%22333.1007%22,%22mobi_app%22:%22web_cn%22%7D')
+        qrcode_key = response.json()['data']['qrcode_key']
+        url = response.json()['data']['url']
+        qrcode_img = qrcode.make(url)
+        qrcode_img.save('qrcode.png')
+        buffer = io.BytesIO()
+        qrcode_img.save(buffer, format="PNG")
+        while True:
+            time.sleep(3)
+            response = self.session.get(url=f'https://passport.bilibili.com/x/passport-login/web/qrcode/poll?qrcode_key={qrcode_key}&source=main-fe-header&web_location=333.1007&x-bili-locale-json=%7B%22c_locale%22:%7B%22language%22:%22zh%22,%22script%22:%22Hans%22%7D,%22always_translate%22:true%7D&x-bili-redirect=1&x-bili-device-req-json=%7B%22platform%22:%22web%22,%22device%22:%22pc%22,%22spmid%22:%22333.1007%22,%22mobi_app%22:%22web_cn%22%7D&b_ret=owAAAABJRU5ErkJggg%3D%3D%2F%2FJlplVgAAAAZJREFUAwBBVe3wqdDH0AAAAABJRU5ErkJggg%3D%3D')
+            pprint(response.json())
+            if response.json()['data']['code'] == 0:
+                url = response.json()['data']['url']
+                self.session.get(url=url)
+                pprint(self.session.cookies)
+                self.conn.execute(
+                    "INSERT OR REPLACE INTO cookie (name, jar_blob) VALUES (?, ?)",
+                    ('bili', sqlite3.Binary(pickle.dumps(self.session.cookies)))
+                )
+                self.conn.commit()
+                nav = self.session.get("https://api.bilibili.com/x/web-interface/nav")
+                pprint(nav.json())
+                break
+
+    def load_cookies(self):
+        row = self.conn.execute(
+            "SELECT jar_blob FROM cookie WHERE name = ?", ('bili',)
+        ).fetchone()
+        if row is None:
+            print('没有找到已保存的 cookie，需要重新登录')
+            return False
+        self.session.cookies = pickle.loads(row[0])
+        pprint(self.session.cookies)
+        return True
 
     def check_api(self):
         params = {
@@ -118,7 +188,6 @@ class BiliBiliSpider():
         params = self.get_wid(params=params)
         response = self.session.get('https://api.bilibili.com/x/space/wbi/arc/search', params=params)
         pprint(response.json())
-
         log.info(f"status_code:{response.status_code}")
         return response
 
@@ -148,7 +217,7 @@ class BiliBiliSpider():
             params = self.get_wid(params=params)
             response = self.session.get('https://api.bilibili.com/x/space/wbi/arc/search', params=params)
             log.info(response.json()['code'])
-            # pprint(response.json())
+            pprint(response.json())
             if end is None:
                 end = math.ceil(response.json()['data']['page']['count'] / 40)
             for index, item in enumerate(response.json()['data']['list']['vlist'], start=1):
@@ -240,9 +309,9 @@ def run_pipline():
             log.info(future.result())
     
 if __name__ == "__main__":
-    run_pipline()
-    # while True:
-    #     time.sleep(3)
-    #     print('123')
-    # log.info(1)
+   a = BiliBiliSpider(url='')
+   print(sys.platform)
+
+#    a.load_cookies()
+   print(next(a.generate_urls()))
 

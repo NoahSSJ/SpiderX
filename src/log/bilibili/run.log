@@ -1,0 +1,16 @@
+2026-11-09 15:37:33,184 | LAPTOP-JH7CAAMV | 34392 | MainThread | INFO | bilibili.py:100 | login | {'code': 0,
+ 'data': {'qrcode_key': '6393ef88b7c2dc849f1e51b4954ab46f',
+          'url': 'https://account.bilibili.com/h5/account-h5/auth/scan-web?navhide=1&callback=close&qrcode_key=6393ef88b7c2dc849f1e51b4954ab46f&from=main-fe-header'},
+ 'message': 'OK',
+ 'ttl': 1}
+2026-11-09 15:40:53,757 | LAPTOP-JH7CAAMV | 44972 | MainThread | INFO | bilibili.py:101 | login | {'code': 0,
+ 'data': {'qrcode_key': '3fd98e47aee310663cc58bf27e235d74',
+          'url': 'https://account.bilibili.com/h5/account-h5/auth/scan-web?navhide=1&callback=close&qrcode_key=3fd98e47aee310663cc58bf27e235d74&from=main-fe-header'},
+ 'message': 'OK',
+ 'ttl': 1}
+2026-11-09 17:01:21,099 | LAPTOP-JH7CAAMV | 38540 | MainThread | INFO | bilibili.py:189 | generate_urls | 0
+2026-11-09 17:01:21,108 | LAPTOP-JH7CAAMV | 38540 | MainThread | INFO | bilibili.py:206 | generate_urls | {'aid': 117562113330096,
+ 'bvid': 'BV1yM4t6RECX',
+ 'mid': 1166997747,
+ 'trace_id': '027ffe46-3b5d-4a91-8e9f-0494949c887c',
+ 'url': 'https://www.bilibili.com/BV1yM4t6RECX?vd_source=cd2f30c4c2b17931e5fe4b95752072ee'}

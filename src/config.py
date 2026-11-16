@@ -3,6 +3,7 @@ from pathlib import Path
 
 ROOT_DIR = next((dir for dir in Path(__file__).resolve().parents if dir.joinpath('requirements.txt').exists()), None)
 SRC_DIR = next((dir / "src" for dir in Path(__file__).resolve().parents if dir.joinpath('requirements.txt').exists()), None)
+DB_DIR = SRC_DIR / "database"
 
 MAX_WORKER = 3
 
